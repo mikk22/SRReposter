@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1487" systemVersion="11E53" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CDFeed" representedClassName="CDFeed" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="filters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDFeedFilter" inverseName="feed" inverseEntity="CDFeedFilter" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDFeedItem" inverseName="feed" inverseEntity="CDFeedItem" syncable="YES"/>
+    </entity>
+    <entity name="CDFeedFilter" representedClassName="CDFeedFilter" syncable="YES">
+        <attribute name="keyword" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="repostFB" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="repostTW" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="feed" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="CDFeed" inverseName="filters" inverseEntity="CDFeed" syncable="YES"/>
+    </entity>
+    <entity name="CDFeedItem" representedClassName="CDFeedItem" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postedFB" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="postedTW" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updated" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="feed" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="CDFeed" inverseName="items" inverseEntity="CDFeed" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CDFeed" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="CDFeedFilter" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="CDFeedItem" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>

@@ -1,0 +1,33 @@
+/* 
+  Localizable.strings
+  SRReposter
+
+  Created by user on 18.08.12.
+  Copyright (c) 2012 Intelvision. All rights reserved.
+*/
+"[Filters]"="Фильтры";
+"[Feed]"="Лента";
+"[Read article]"="Читать полную статью";
+"[Tweet posted]"="Запись добавлена в твиттер";
+"[Oops! An error has occured!]"="Oops! An error has occured!";
+"[Feed Item posted]"="Запись добавлена в Facebook";
+"[News feed]"="Лента новостей";
+"[Feed Name]"="Название ленты";
+"[Feed URL]"="URL ленты";
+"[Enter Feed name]"="Введите название ленты";
+"[Enter Feed URL]"="Введите ссылку для ленты";
+"[OK]"="ОК";
+"[Cancel]"="Отмена";
+"[Edit]"="Править";
+"[Done]"="Готово";
+"[Filter Name]"="Название фильтра";
+"[Filter Keywords]"="Ключевые сочетания";
+"[New keyword]"="Название фильтра";
+"[Enter Feed Name]"="Введите название ленты";
+"[Enter Feed URL]"="Введите URL ленты";
+"[Feed Filters]"="Фильты";
+"[Add filter]"="Добавить фильтр";
+"[Repost to:]"="Отправить :";
+"[Create Twitter account in Settings]"="Создайте аккунт Твиттера в Настройках";
+"[Sign in Facebook account first]"="Необходима авторизация в Facebook";
+

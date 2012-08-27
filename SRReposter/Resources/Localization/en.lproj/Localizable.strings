@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  SRReposter
+
+  Created by user on 18.08.12.
+  Copyright (c) 2012 Intelvision. All rights reserved.
+*/
+"[Filters]"="Filters";
+"[Feed]"="Feed";
+"[Read article]"="Read article";
+"[Tweet posted]"="Tweet posted";
+"[Oops! An error has occured!]"="Oops! An error has occured!";
+"[Feed Item posted]"="Запись добавлена в Facebook";
+"[News feed]"="News feed";
+"[Feed Name]"="Feed Name";
+"[Feed URL]"="Feed URL";
+"[Enter Feed name]"="Enter Feed name";
+"[Enter Feed URL]"="Enter Feed URL";
+"[OK]"="OK";
+"[Cancel]"="Cancel";
+"[Edit]"="Edit";
+"[Done]"="Done";
+"[Filter Name]"="Feed Filter Name";
+"[Filter Keywords]"="Feed Filter Keywords";
+"[New keyword]"="New keyword";
+"[Enter Feed Name]"="Enter Feed Name";
+"[Enter Feed URL]"="Enter Feed URL";
+"[Feed Filters]"="Feed Filters";
+"[Add filter]"="Add filter";
+"[Repost to:]"="Repost to:";
+"[Create Twitter account in Settings]"="Create Twitter account in Settings";
+"[Sign in Facebook account first]"="Sign in Facebook account first";
