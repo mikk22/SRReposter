@@ -130,14 +130,8 @@
 		CE6793E415E0432B0052154A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		CE6793E615E043350052154A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CE6793E815E043460052154A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		CE6793EB15E043800052154A /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = External/Reachability/Reachability.h; sourceTree = "<group>"; };
-		CE6793EC15E043800052154A /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = External/Reachability/Reachability.m; sourceTree = "<group>"; };
 		CE6793EE15E0439E0052154A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		CE6793F015E044A40052154A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		CE67940115E04DF60052154A /* GDataXMLElement-Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GDataXMLElement-Extras.h"; path = "External/GDataXML/GDataXMLElement-Extras.h"; sourceTree = "<group>"; };
-		CE67940215E04DF60052154A /* GDataXMLElement-Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GDataXMLElement-Extras.m"; path = "External/GDataXML/GDataXMLElement-Extras.m"; sourceTree = "<group>"; };
-		CE67940315E04DF60052154A /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDataXMLNode.h; path = External/GDataXML/GDataXMLNode.h; sourceTree = "<group>"; };
-		CE67940415E04DF60052154A /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDataXMLNode.m; path = External/GDataXML/GDataXMLNode.m; sourceTree = "<group>"; };
 		CE67940A15E055DA0052154A /* NSDate+InternetDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+InternetDateTime.h"; sourceTree = "<group>"; };
 		CE67940B15E055DA0052154A /* NSDate+InternetDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+InternetDateTime.m"; sourceTree = "<group>"; };
 		CE67940D15E0563D0052154A /* NSArray+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extras.h"; sourceTree = "<group>"; };
@@ -360,19 +354,8 @@
 				D9820B7815E4F3EA00ACD80E /* MagicalRecord */,
 				CEC2BF6715E429DB003FBA90 /* MWFeedParser */,
 				CE67944515E15F600052154A /* SVProgressHUD */,
-				CE67940015E04DDA0052154A /* GDataXML */,
-				CE6793EA15E043710052154A /* Reachability */,
 			);
 			name = External;
-			sourceTree = "<group>";
-		};
-		CE6793EA15E043710052154A /* Reachability */ = {
-			isa = PBXGroup;
-			children = (
-				CE6793EB15E043800052154A /* Reachability.h */,
-				CE6793EC15E043800052154A /* Reachability.m */,
-			);
-			name = Reachability;
 			sourceTree = "<group>";
 		};
 		CE6793F515E045670052154A /* Categories */ = {
@@ -386,17 +369,6 @@
 				CEB3A06E15EA2CAD00D76599 /* UIButton+SRButtons.m */,
 			);
 			path = Categories;
-			sourceTree = "<group>";
-		};
-		CE67940015E04DDA0052154A /* GDataXML */ = {
-			isa = PBXGroup;
-			children = (
-				CE67940115E04DF60052154A /* GDataXMLElement-Extras.h */,
-				CE67940215E04DF60052154A /* GDataXMLElement-Extras.m */,
-				CE67940315E04DF60052154A /* GDataXMLNode.h */,
-				CE67940415E04DF60052154A /* GDataXMLNode.m */,
-			);
-			name = GDataXML;
 			sourceTree = "<group>";
 		};
 		CE67944515E15F600052154A /* SVProgressHUD */ = {
