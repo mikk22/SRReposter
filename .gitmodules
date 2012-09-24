@@ -1,0 +1,12 @@
+[submodule "Submodules/MagicalRecord"]
+	path = Submodules/MagicalRecord
+	url = git://github.com/magicalpanda/MagicalRecord.git
+[submodule "Submodules/SVProgressHUD"]
+	path = Submodules/SVProgressHUD
+	url = git://github.com/samvermette/SVProgressHUD.git
+[submodule "Submodules/EGOTableViewPullRefresh"]
+	path = Submodules/EGOTableViewPullRefresh
+	url = https://github.com/enormego/EGOTableViewPullRefresh.git
+[submodule "Submodules/MWFeedParser"]
+	path = Submodules/MWFeedParser
+	url = https://github.com/mwaterfall/MWFeedParser.git
