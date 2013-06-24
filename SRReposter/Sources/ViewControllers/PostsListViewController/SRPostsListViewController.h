@@ -11,13 +11,10 @@
 #import "CDFeed.h"
 #import "SRFeedFiltersListController.h"
 
-@interface SRPostsListController : UITableViewController <JTModelDelegate,
+@interface SRPostsListViewController : UITableViewController <JTModelDelegate,
                                                          SRFeedFiltersListDelegate,
                                                          EGORefreshTableHeaderDelegate
                                                         >
-{
-	EGORefreshTableHeaderView *_refreshHeaderView;
-}
 
 -(id)initWithFeed:(CDFeed*)feed;
 

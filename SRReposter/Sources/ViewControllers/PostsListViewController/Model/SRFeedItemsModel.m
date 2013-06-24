@@ -18,14 +18,6 @@
 
 @implementation SRFeedItemsModel
 
-@synthesize feed=_feed;
-
--(void)dealloc
-{
-    self.feed=nil;
-    _parsedItems=nil;
-}
-
 -(id)initWithFeed:(CDFeed*)feed
 {
     self=[super init];
@@ -61,9 +53,8 @@
     _dataObjects=[_dataObjects sortedArrayUsingDescriptors:[NSArray arrayWithObject:dateSortDescriptor]];
     
     //repost to FB and TW
+    //if we have any filters
     [SRFilterReposter repostFeedItems:_dataObjects withFeed:self.feed];
-
-    
     [self didLoad];
 }
 

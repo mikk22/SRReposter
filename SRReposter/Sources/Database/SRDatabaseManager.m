@@ -65,7 +65,7 @@
     if (newFeedItems.count)
     {
         DLog(@"ADDED_TO_CD %d",resultNewItems.count);
-        [localContext MR_save];
+        [localContext MR_saveToPersistentStoreAndWait];
     }
     
     return [NSArray arrayWithArray:resultNewItems];
@@ -102,7 +102,7 @@
         [feed.filters makeObjectsPerformSelector:@selector(MR_deleteEntity)];
 
     [feed MR_deleteInContext:localContext];
-    [localContext MR_save];
+    [localContext MR_saveToPersistentStoreAndWait];
 }
 
 

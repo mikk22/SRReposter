@@ -5,26 +5,22 @@
 //  Created by user on 20.08.12.
 //
 
-#import "SRFeedsListController.h"
-#import "SRPostsListController.h"
-
+#import "SRFeedsListViewController.h"
+#import "SRPostsListViewController.h"
+#import "SREditFeedViewController.h"
 #import "SRFeed.h"
 
-@interface SRFeedsListController ()
+@interface SRFeedsListViewController ()
+
+@property (nonatomic, strong) SRFeedModel       *dataSource;
+@property (nonatomic)         BOOL              editMode;
+
 -(void)_setupNavigationBar;
 -(void)_editModeButtonTouch:(id)sender;
 -(void)_addNewFeedButtonTouch:(id)sender;
 @end
 
-@implementation SRFeedsListController
-
-@synthesize dataSource=_dataSource;
-@synthesize editMode=_editMode;
-
--(void)dealloc
-{
-    self.dataSource=nil;
-}
+@implementation SRFeedsListViewController
 
 - (void)viewDidLoad
 {
@@ -63,7 +59,7 @@
 
 -(void)_addNewFeedButtonTouch:(id)sender
 {
-    SRFeedEditController *addFeedViewController=[[SRFeedEditController alloc] initWithEditMode:SRModeAdd];
+    SREditFeedViewController *addFeedViewController=[[SREditFeedViewController alloc] initWithEditMode:SRModeAdd];
     addFeedViewController.delegate=self;
     UINavigationController *navigationController=[[UINavigationController alloc] initWithRootViewController:addFeedViewController];
     [self.navigationController presentModalViewController:navigationController animated:YES];
@@ -132,7 +128,7 @@
     {
         //edit controller
         CDFeed *feedItem=[self.dataSource.dataObjects objectAtIndex:indexPath.row];
-        SRFeedEditController *addFeedViewController=[[SRFeedEditController alloc] initWithEditMode:SRModeEdit];
+        SREditFeedViewController *addFeedViewController=[[SREditFeedViewController alloc] initWithEditMode:SRModeEdit];
         addFeedViewController.delegate=self;
         addFeedViewController.feedItem=feedItem;
         UINavigationController *navigationController=[[UINavigationController alloc] initWithRootViewController:addFeedViewController];
@@ -140,7 +136,7 @@
     } else
     {
         //show feedlist
-        SRPostsListController *feedListController=[[SRPostsListController alloc] initWithFeed:[self.dataSource.dataObjects objectAtIndex:indexPath.row]];
+        SRPostsListViewController *feedListController=[[SRPostsListViewController alloc] initWithFeed:[self.dataSource.dataObjects objectAtIndex:indexPath.row]];
         [self.navigationController pushViewController:feedListController animated:YES];
     }
 }

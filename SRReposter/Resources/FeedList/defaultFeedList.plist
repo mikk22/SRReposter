@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Name</key>
+		<string>YAHOO NEWS</string>
+		<key>Url</key>
+		<string>http://rss.news.yahoo.com/rss/entertainment</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>vmwstudios</string>
+		<key>Url</key>
+		<string>http://feeds.feedburner.com/vmwstudios</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>cocoawithlove</string>
+		<key>Url</key>
+		<string>http://cocoawithlove.com/feeds/posts/default</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>RayWenderlich</string>
+		<key>Url</key>
+		<string>http://feeds.feedburner.com/RayWenderlich</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>maniacdev</string>
+		<key>Url</key>
+		<string>http://feeds.feedburner.com/maniacde</string>
+	</dict>
+</array>
+</plist>

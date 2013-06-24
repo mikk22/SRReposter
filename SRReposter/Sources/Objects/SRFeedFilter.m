@@ -9,11 +9,6 @@
 
 @implementation SRFeedFilter
 
-@synthesize name=_name;
-@synthesize keywords=_keywords;
-@synthesize repostFB=_repostFB;
-@synthesize repostTW=_repostTW;
-
 -(NSArray*)keywords
 {
 if (!_keywords)

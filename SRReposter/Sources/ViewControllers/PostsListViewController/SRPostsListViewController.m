@@ -5,7 +5,7 @@
 //  Created by user on 18.08.12.
 //
 
-#import "SRPostsListController.h"
+#import "SRPostsListViewController.h"
 
 #import "NSArray+Extras.h"
 #import "SRPostWebViewController.h"
@@ -14,10 +14,9 @@
 #import "NSString+HTML.h"
 
 
-@interface SRPostsListController ()
+@interface SRPostsListViewController ()
 {
-    CDFeed  *_feed;
-    SRFeedItemsModel    *_feedItems;
+	EGORefreshTableHeaderView *_refreshHeaderView;
 }
 
 @property (nonatomic, strong)   SRFeedItemsModel    *feedItems;
@@ -30,17 +29,7 @@
 
 @end
 
-@implementation SRPostsListController
-
-@synthesize feedItems=_feedItems;
-@synthesize feed=_feed;
-
--(void)dealloc
-{
-    self.feed=nil;
-    self.feedItems=nil;
-}
-
+@implementation SRPostsListViewController
 
 -(id)initWithFeed:(CDFeed*)feed
 {

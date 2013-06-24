@@ -9,12 +9,9 @@
 
 @implementation SRFeed
 
-@synthesize name=_name;
-@synthesize url=_url;
-
 +(SRFeed*)itemNamed:(NSString*)name withUrl:(NSString*)urlString
 {
-    SRFeed *item=[[SRFeed alloc] init];
+    SRFeed *item=SRFeed.new;
     if (item)
     {
         item.name=name;

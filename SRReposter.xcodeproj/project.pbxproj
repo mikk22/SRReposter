@@ -63,32 +63,38 @@
 		CE67940F15E0563D0052154A /* NSArray+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67940E15E0563D0052154A /* NSArray+Extras.m */; };
 		CE67942915E137390052154A /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE67942815E137380052154A /* Accounts.framework */; };
 		CE67942B15E137410052154A /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE67942A15E137410052154A /* Twitter.framework */; };
-		CE67942E15E13DA20052154A /* SRTwitterReposter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67942D15E13DA10052154A /* SRTwitterReposter.m */; };
-		CE787F1115E5812200CE6A91 /* CDFeedFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE787F1015E5812200CE6A91 /* CDFeedFilter.m */; };
-		CE787F1415E5812300CE6A91 /* CDFeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CE787F1315E5812300CE6A91 /* CDFeedItem.m */; };
-		CE787F1715E5812300CE6A91 /* CDFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = CE787F1615E5812300CE6A91 /* CDFeed.m */; };
-		CE796CFE15E16A2700810F21 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE796CFD15E16A2700810F21 /* FacebookSDK.framework */; };
-		CE796D0315E16A9E00810F21 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CE796D0015E16A9E00810F21 /* FacebookSDKResources.bundle */; };
-		CE796D0415E16A9E00810F21 /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CE796D0115E16A9E00810F21 /* FBUserSettingsViewResources.bundle */; };
-		CE796D0C15E1A30900810F21 /* SRFBConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = CE796D0B15E1A30900810F21 /* SRFBConnect.m */; };
 		CE7A104D15E6B16E0004641C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7A104C15E6B16E0004641C /* QuartzCore.framework */; };
-		CE7A106515E6B43B0004641C /* SRFeedFiltersModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7A106415E6B43B0004641C /* SRFeedFiltersModel.m */; };
 		CE7A106815E6E7340004641C /* SRFeedFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7A106715E6E7330004641C /* SRFeedFilter.m */; };
-		CE91DD5415E915030031D0E8 /* SRArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE91DD3A15E915030031D0E8 /* SRArticleCell.m */; };
-		CE91DD5515E915030031D0E8 /* SRArticleDescriptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE91DD3C15E915030031D0E8 /* SRArticleDescriptionCell.m */; };
-		CE91DD5615E915030031D0E8 /* SRArticleRepostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE91DD3E15E915030031D0E8 /* SRArticleRepostCell.m */; };
-		CE91DD5715E915030031D0E8 /* SRArticleTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE91DD4015E915030031D0E8 /* SRArticleTitleCell.m */; };
-		CE91DD5815E915030031D0E8 /* SRFeedParamCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE91DD4215E915030031D0E8 /* SRFeedParamCell.m */; };
-		CE91DD5915E915030031D0E8 /* SRFeedEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE91DD4515E915030031D0E8 /* SRFeedEditController.m */; };
-		CE91DD5A15E915030031D0E8 /* SRFeedsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE91DD4715E915030031D0E8 /* SRFeedsListController.m */; };
-		CE91DD5B15E915030031D0E8 /* SRAddFeedFilterController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE91DD4A15E915030031D0E8 /* SRAddFeedFilterController.m */; };
-		CE91DD5C15E915030031D0E8 /* SRFeedFiltersListController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE91DD4C15E915030031D0E8 /* SRFeedFiltersListController.m */; };
-		CE91DD5D15E915030031D0E8 /* SRPostInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE91DD4F15E915030031D0E8 /* SRPostInfoViewController.m */; };
-		CE91DD5E15E915030031D0E8 /* SRPostsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE91DD5115E915030031D0E8 /* SRPostsListController.m */; };
-		CE91DD5F15E915030031D0E8 /* SRPostWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE91DD5315E915030031D0E8 /* SRPostWebViewController.m */; };
+		CE86B1D7177859020029089C /* libFacebook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE86B19E177858D10029089C /* libFacebook.a */; };
+		CE86B1D9177859060029089C /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE86B1D8177859060029089C /* libfacebook_ios_sdk.a */; };
+		CE86B1DA1778590F0029089C /* libShareKitCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE86B180177858D10029089C /* libShareKitCore.a */; };
+		CE86B1DC17785A710029089C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE86B1DB17785A710029089C /* AVFoundation.framework */; };
+		CE86B1DE17785A930029089C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE86B1DD17785A930029089C /* CoreMedia.framework */; };
+		CE86B1E017785AAE0029089C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE86B1DF17785AAE0029089C /* Social.framework */; };
+		CE86B1E117785ACC0029089C /* libReachability.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE86B186177858D10029089C /* libReachability.a */; };
+		CE86B1E317785AF10029089C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE86B1E217785AF10029089C /* AdSupport.framework */; };
+		CE86B1E417785B070029089C /* libOAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE86B184177858D10029089C /* libOAuth.a */; };
+		CE86B1E617785B320029089C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE86B1E517785B320029089C /* Security.framework */; };
+		CE86B1F317785F560029089C /* defaultFeedList.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE86B1F217785F560029089C /* defaultFeedList.plist */; };
+		CE86B1FB17785FE10029089C /* CDFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = CE86B1F617785FE10029089C /* CDFeed.m */; };
+		CE86B1FC17785FE10029089C /* CDFeedFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE86B1F817785FE10029089C /* CDFeedFilter.m */; };
+		CE86B1FD17785FE10029089C /* CDFeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CE86B1FA17785FE10029089C /* CDFeedItem.m */; };
+		CE86B200177862BB0029089C /* JTModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE86B1FF177862BA0029089C /* JTModel.m */; };
+		CE86B21F17786DA70029089C /* SRFBReposter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE86B21C17786DA70029089C /* SRFBReposter.m */; };
+		CE86B22017786DA70029089C /* SRTwitterReposter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE86B21E17786DA70029089C /* SRTwitterReposter.m */; };
+		CE86B22317786E0A0029089C /* RPLSHKFacebook.m in Sources */ = {isa = PBXBuildFile; fileRef = CE86B22217786E0A0029089C /* RPLSHKFacebook.m */; };
+		CE86B23517787F1F0029089C /* ShareKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CE86B17E177858D10029089C /* ShareKit.bundle */; };
+		CE86B23D17787F640029089C /* RPLSHKConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = CE86B23A17787F640029089C /* RPLSHKConfigurator.m */; };
+		CE86B23E17787F640029089C /* SHK+AutoShare.m in Sources */ = {isa = PBXBuildFile; fileRef = CE86B23C17787F640029089C /* SHK+AutoShare.m */; };
+		CE86B2631778852E0029089C /* SRAddFeedFilterController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE86B24D1778852E0029089C /* SRAddFeedFilterController.m */; };
+		CE86B2641778852E0029089C /* SREditFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE86B2501778852E0029089C /* SREditFeedViewController.m */; };
+		CE86B2651778852E0029089C /* SRFeedFiltersListController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE86B2531778852E0029089C /* SRFeedFiltersListController.m */; };
+		CE86B2661778852E0029089C /* SRFeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE86B2571778852E0029089C /* SRFeedModel.m */; };
+		CE86B2671778852E0029089C /* SRFeedsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE86B2591778852E0029089C /* SRFeedsListViewController.m */; };
+		CE86B2681778852E0029089C /* SRPostInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE86B25C1778852E0029089C /* SRPostInfoViewController.m */; };
+		CE86B2691778852E0029089C /* SRPostsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE86B25F1778852E0029089C /* SRPostsListViewController.m */; };
+		CE86B26A1778852E0029089C /* SRPostWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE86B2621778852E0029089C /* SRPostWebViewController.m */; };
 		CE9B040E15E2CA6E00111B2F /* SRFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9B040D15E2CA6E00111B2F /* SRFeed.m */; };
-		CE9B041715E2E05200111B2F /* JTModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9B041615E2E05100111B2F /* JTModel.m */; };
-		CE9B041A15E2EC6F00111B2F /* SRFeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9B041915E2EC6F00111B2F /* SRFeedModel.m */; };
 		CE9ED7D615E8D26700646481 /* SRFilterReposter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9ED7D515E8D26700646481 /* SRFilterReposter.m */; };
 		CEB3A06F15EA2CAD00D76599 /* UIButton+SRButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB3A06E15EA2CAD00D76599 /* UIButton+SRButtons.m */; };
 		CEB3A07A15EA2DEA00D76599 /* fb_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = CEB3A07215EA2DEA00D76599 /* fb_selected.png */; };
@@ -115,11 +121,346 @@
 		CECD86ED15E000660061DDB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CECD86EB15E000660061DDB3 /* InfoPlist.strings */; };
 		CECD86F015E000660061DDB3 /* SRReposterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD86EF15E000660061DDB3 /* SRReposterTests.m */; };
 		CECD871315E008290061DDB3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CECD871515E008290061DDB3 /* Localizable.strings */; };
+		CEFD2E2E1778942100AF51E2 /* SRFeedItemsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFD2E2D1778942100AF51E2 /* SRFeedItemsModel.m */; };
+		CEFD2E5B1778958800AF51E2 /* SRFeedFiltersModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFD2E5A1778958800AF51E2 /* SRFeedFiltersModel.m */; };
+		CEFD2E67177895F100AF51E2 /* SRArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFD2E5E177895F000AF51E2 /* SRArticleCell.m */; };
+		CEFD2E68177895F100AF51E2 /* SRArticleDescriptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFD2E60177895F000AF51E2 /* SRArticleDescriptionCell.m */; };
+		CEFD2E69177895F100AF51E2 /* SRArticleRepostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFD2E62177895F000AF51E2 /* SRArticleRepostCell.m */; };
+		CEFD2E6A177895F100AF51E2 /* SRArticleTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFD2E64177895F000AF51E2 /* SRArticleTitleCell.m */; };
+		CEFD2E6B177895F100AF51E2 /* SRFeedParamCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFD2E66177895F000AF51E2 /* SRFeedParamCell.m */; };
 		D9820B6715E4E44900ACD80E /* SRDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9820B6615E4E44800ACD80E /* SRDatabaseManager.m */; };
-		D9820BDA15E50FC400ACD80E /* SRFeedItemsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D9820BD915E50FC400ACD80E /* SRFeedItemsModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CE86B17B177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AB5342E1552AADD00171BCE;
+			remoteInfo = "Static Library";
+		};
+		CE86B17D177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AB5360F1552E26800171BCE;
+			remoteInfo = "Resource Bundle";
+		};
+		CE86B17F177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A0F9246156BA2A0009CB40A;
+			remoteInfo = "Static Library Core";
+		};
+		CE86B181177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A1AFCC0160E11F90086B98A;
+			remoteInfo = SSKeyChain;
+		};
+		CE86B183177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A16F37E161340DD0019645D;
+			remoteInfo = OAuth;
+		};
+		CE86B185177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A1AFCD1160E123C0086B98A;
+			remoteInfo = Reachability;
+		};
+		CE86B187177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AABBECD2162F0756009D46E4;
+			remoteInfo = Copy;
+		};
+		CE86B189177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AABBECDB162F0779009D46E4;
+			remoteInfo = Email;
+		};
+		CE86B18B177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AABBECC9162F0719009D46E4;
+			remoteInfo = Logout;
+		};
+		CE86B18D177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AABBECE4162F07B4009D46E4;
+			remoteInfo = "Open in Safari";
+		};
+		CE86B18F177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AABBECBE162F063F009D46E4;
+			remoteInfo = Print;
+		};
+		CE86B191177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AABBECED162F07DF009D46E4;
+			remoteInfo = "Save to Album";
+		};
+		CE86B193177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AABBECF6162F080F009D46E4;
+			remoteInfo = "Text Message";
+		};
+		CE86B195177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AABBED08162F0858009D46E4;
+			remoteInfo = Delicious;
+		};
+		CE86B197177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AABBED11162F087F009D46E4;
+			remoteInfo = Diigo;
+		};
+		CE86B199177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AABBED24162F08E6009D46E4;
+			remoteInfo = Evernote;
+		};
+		CE86B19B177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A1AFCE2160E127B0086B98A;
+			remoteInfo = "Evernote SDK";
+		};
+		CE86B19D177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AABBED37162F0B65009D46E4;
+			remoteInfo = Facebook;
+		};
+		CE86B19F177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AABBED46162F0B86009D46E4;
+			remoteInfo = FoursquareV2;
+		};
+		CE86B1A1177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AABBED50162F0BA7009D46E4;
+			remoteInfo = Flickr;
+		};
+		CE86B1A3177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A1AFD24160E13740086B98A;
+			remoteInfo = "Flickr SDK";
+		};
+		CE86B1A5177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4503EBC0169104470057294C;
+			remoteInfo = "Google Plus";
+		};
+		CE86B1A7177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AA83BF91705E355009C483A;
+			remoteInfo = "Google Plus SDK";
+		};
+		CE86B1A9177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AABBED59162F0BC5009D46E4;
+			remoteInfo = "Google Reader";
+		};
+		CE86B1AB177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A16F3C216134A890019645D;
+			remoteInfo = Instagram;
+		};
+		CE86B1AD177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AABBED62162F0BE8009D46E4;
+			remoteInfo = Instapaper;
+		};
+		CE86B1AF177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AABBECFF162F0835009D46E4;
+			remoteInfo = Kippt;
+		};
+		CE86B1B1177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AABBED6B162F0C03009D46E4;
+			remoteInfo = LinkedIn;
+		};
+		CE86B1B3177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AABBED74162F0C1A009D46E4;
+			remoteInfo = Pinboard;
+		};
+		CE86B1B5177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 949BCB8C172A993000D706D4;
+			remoteInfo = Buffer;
+		};
+		CE86B1B7177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AC2A3A016597F4C0089ABE8;
+			remoteInfo = "Sina Weibo";
+		};
+		CE86B1B9177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AABBED86162F0C4D009D46E4;
+			remoteInfo = Tumbl;
+		};
+		CE86B1BB177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A1AFD3A160E14340086B98A;
+			remoteInfo = Twitter;
+		};
+		CE86B1BD177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AABBED1B162F08A3009D46E4;
+			remoteInfo = VKontakte;
+		};
+		CE86B1BF177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AC2A3A016597F4C0089ABE8;
+			remoteInfo = "Sina Weibo";
+		};
+		CE86B1C1177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A49DBC316BC193E004B7E78;
+			remoteInfo = Readability;
+		};
+		CE86B1C3177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A203D0A16EB7DA200421995;
+			remoteInfo = Hatena;
+		};
+		CE86B1C5177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AAE8CA516EB960500429C51;
+			remoteInfo = Plurk;
+		};
+		CE86B1C7177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DE334C2116F3339300FF692B;
+			remoteInfo = Dropbox;
+		};
+		CE86B1C9177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DE334CCF16F34BDD00FF692B;
+			remoteInfo = "Dropbox SDK";
+		};
+		CE86B1CB177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AECF322171D5194000722FA;
+			remoteInfo = YouTube;
+		};
+		CE86B1CD177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AECF32C171D51C3000722FA;
+			remoteInfo = "YouTube SDK";
+		};
+		CE86B1CF177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A4E465A173E2B2900CCEE80;
+			remoteInfo = Pocket;
+		};
+		CE86B1D1177858D10029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A4E4663173E2C2500CCEE80;
+			remoteInfo = "Pocket SDK";
+		};
+		CE86B1D3177858E50029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A0F91D1156BA2A0009CB40A;
+			remoteInfo = "Static Library Core";
+		};
+		CE86B1D5177858ED0029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = AABBED25162F0B65009D46E4;
+			remoteInfo = Facebook;
+		};
+		CE86B23617787F430029089C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AB5360E1552E26800171BCE;
+			remoteInfo = "Resource Bundle";
+		};
 		CECD86E615E000650061DDB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CECD86B415E000650061DDB3 /* Project object */;
@@ -226,55 +567,54 @@
 		CE67940E15E0563D0052154A /* NSArray+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extras.m"; sourceTree = "<group>"; };
 		CE67942815E137380052154A /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		CE67942A15E137410052154A /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
-		CE67942C15E13DA10052154A /* SRTwitterReposter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRTwitterReposter.h; sourceTree = "<group>"; };
-		CE67942D15E13DA10052154A /* SRTwitterReposter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRTwitterReposter.m; sourceTree = "<group>"; };
-		CE787F0F15E5812200CE6A91 /* CDFeedFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFeedFilter.h; sourceTree = "<group>"; };
-		CE787F1015E5812200CE6A91 /* CDFeedFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFeedFilter.m; sourceTree = "<group>"; };
-		CE787F1215E5812300CE6A91 /* CDFeedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFeedItem.h; sourceTree = "<group>"; };
-		CE787F1315E5812300CE6A91 /* CDFeedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFeedItem.m; sourceTree = "<group>"; };
-		CE787F1515E5812300CE6A91 /* CDFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFeed.h; sourceTree = "<group>"; };
-		CE787F1615E5812300CE6A91 /* CDFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFeed.m; sourceTree = "<group>"; };
-		CE796CFD15E16A2700810F21 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
-		CE796D0015E16A9E00810F21 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKResources.bundle; sourceTree = "<group>"; };
-		CE796D0115E16A9E00810F21 /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
-		CE796D0A15E1A30900810F21 /* SRFBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRFBConnect.h; sourceTree = "<group>"; };
-		CE796D0B15E1A30900810F21 /* SRFBConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRFBConnect.m; sourceTree = "<group>"; };
 		CE7A104C15E6B16E0004641C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		CE7A106315E6B43B0004641C /* SRFeedFiltersModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRFeedFiltersModel.h; sourceTree = "<group>"; };
-		CE7A106415E6B43B0004641C /* SRFeedFiltersModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRFeedFiltersModel.m; sourceTree = "<group>"; };
 		CE7A106615E6E7330004641C /* SRFeedFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRFeedFilter.h; sourceTree = "<group>"; };
 		CE7A106715E6E7330004641C /* SRFeedFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRFeedFilter.m; sourceTree = "<group>"; };
+		CE86B148177858D00029089C /* ShareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShareKit.xcodeproj; path = Submodules/ShareKit/ShareKit.xcodeproj; sourceTree = "<group>"; };
+		CE86B1D8177859060029089C /* libfacebook_ios_sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfacebook_ios_sdk.a; path = "Submodules/ShareKit/Submodules/facebook-ios-sdk/src/build/Release-iphoneos/libfacebook_ios_sdk.a"; sourceTree = "<group>"; };
+		CE86B1DB17785A710029089C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CE86B1DD17785A930029089C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		CE86B1DF17785AAE0029089C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		CE86B1E217785AF10029089C /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		CE86B1E517785B320029089C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CE86B1F217785F560029089C /* defaultFeedList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defaultFeedList.plist; sourceTree = "<group>"; };
+		CE86B1F517785FE10029089C /* CDFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFeed.h; sourceTree = "<group>"; };
+		CE86B1F617785FE10029089C /* CDFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFeed.m; sourceTree = "<group>"; };
+		CE86B1F717785FE10029089C /* CDFeedFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFeedFilter.h; sourceTree = "<group>"; };
+		CE86B1F817785FE10029089C /* CDFeedFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFeedFilter.m; sourceTree = "<group>"; };
+		CE86B1F917785FE10029089C /* CDFeedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFeedItem.h; sourceTree = "<group>"; };
+		CE86B1FA17785FE10029089C /* CDFeedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFeedItem.m; sourceTree = "<group>"; };
+		CE86B1FE177862BA0029089C /* JTModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTModel.h; sourceTree = "<group>"; };
+		CE86B1FF177862BA0029089C /* JTModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTModel.m; sourceTree = "<group>"; };
+		CE86B21B17786DA70029089C /* SRFBReposter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRFBReposter.h; sourceTree = "<group>"; };
+		CE86B21C17786DA70029089C /* SRFBReposter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRFBReposter.m; sourceTree = "<group>"; };
+		CE86B21D17786DA70029089C /* SRTwitterReposter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRTwitterReposter.h; sourceTree = "<group>"; };
+		CE86B21E17786DA70029089C /* SRTwitterReposter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRTwitterReposter.m; sourceTree = "<group>"; };
+		CE86B22117786E090029089C /* RPLSHKFacebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPLSHKFacebook.h; sourceTree = "<group>"; };
+		CE86B22217786E0A0029089C /* RPLSHKFacebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPLSHKFacebook.m; sourceTree = "<group>"; };
+		CE86B23917787F640029089C /* RPLSHKConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPLSHKConfigurator.h; sourceTree = "<group>"; };
+		CE86B23A17787F640029089C /* RPLSHKConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPLSHKConfigurator.m; sourceTree = "<group>"; };
+		CE86B23B17787F640029089C /* SHK+AutoShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SHK+AutoShare.h"; sourceTree = "<group>"; };
+		CE86B23C17787F640029089C /* SHK+AutoShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SHK+AutoShare.m"; sourceTree = "<group>"; };
+		CE86B24C1778852E0029089C /* SRAddFeedFilterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRAddFeedFilterController.h; sourceTree = "<group>"; };
+		CE86B24D1778852E0029089C /* SRAddFeedFilterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRAddFeedFilterController.m; sourceTree = "<group>"; };
+		CE86B24F1778852E0029089C /* SREditFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SREditFeedViewController.h; sourceTree = "<group>"; };
+		CE86B2501778852E0029089C /* SREditFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SREditFeedViewController.m; sourceTree = "<group>"; };
+		CE86B2521778852E0029089C /* SRFeedFiltersListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRFeedFiltersListController.h; sourceTree = "<group>"; };
+		CE86B2531778852E0029089C /* SRFeedFiltersListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRFeedFiltersListController.m; sourceTree = "<group>"; };
+		CE86B2561778852E0029089C /* SRFeedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRFeedModel.h; sourceTree = "<group>"; };
+		CE86B2571778852E0029089C /* SRFeedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRFeedModel.m; sourceTree = "<group>"; };
+		CE86B2581778852E0029089C /* SRFeedsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRFeedsListViewController.h; sourceTree = "<group>"; };
+		CE86B2591778852E0029089C /* SRFeedsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRFeedsListViewController.m; sourceTree = "<group>"; };
+		CE86B25B1778852E0029089C /* SRPostInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRPostInfoViewController.h; sourceTree = "<group>"; };
+		CE86B25C1778852E0029089C /* SRPostInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRPostInfoViewController.m; sourceTree = "<group>"; };
+		CE86B25E1778852E0029089C /* SRPostsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRPostsListViewController.h; sourceTree = "<group>"; };
+		CE86B25F1778852E0029089C /* SRPostsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRPostsListViewController.m; sourceTree = "<group>"; };
+		CE86B2611778852E0029089C /* SRPostWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRPostWebViewController.h; sourceTree = "<group>"; };
+		CE86B2621778852E0029089C /* SRPostWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRPostWebViewController.m; sourceTree = "<group>"; };
 		CE91DD3615E913D10031D0E8 /* SREditProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SREditProtocol.h; sourceTree = "<group>"; };
-		CE91DD3915E915030031D0E8 /* SRArticleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRArticleCell.h; sourceTree = "<group>"; };
-		CE91DD3A15E915030031D0E8 /* SRArticleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRArticleCell.m; sourceTree = "<group>"; };
-		CE91DD3B15E915030031D0E8 /* SRArticleDescriptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRArticleDescriptionCell.h; sourceTree = "<group>"; };
-		CE91DD3C15E915030031D0E8 /* SRArticleDescriptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRArticleDescriptionCell.m; sourceTree = "<group>"; };
-		CE91DD3D15E915030031D0E8 /* SRArticleRepostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRArticleRepostCell.h; sourceTree = "<group>"; };
-		CE91DD3E15E915030031D0E8 /* SRArticleRepostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRArticleRepostCell.m; sourceTree = "<group>"; };
-		CE91DD3F15E915030031D0E8 /* SRArticleTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRArticleTitleCell.h; sourceTree = "<group>"; };
-		CE91DD4015E915030031D0E8 /* SRArticleTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRArticleTitleCell.m; sourceTree = "<group>"; };
-		CE91DD4115E915030031D0E8 /* SRFeedParamCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRFeedParamCell.h; sourceTree = "<group>"; };
-		CE91DD4215E915030031D0E8 /* SRFeedParamCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRFeedParamCell.m; sourceTree = "<group>"; };
-		CE91DD4415E915030031D0E8 /* SRFeedEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRFeedEditController.h; sourceTree = "<group>"; };
-		CE91DD4515E915030031D0E8 /* SRFeedEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRFeedEditController.m; sourceTree = "<group>"; };
-		CE91DD4615E915030031D0E8 /* SRFeedsListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRFeedsListController.h; sourceTree = "<group>"; };
-		CE91DD4715E915030031D0E8 /* SRFeedsListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRFeedsListController.m; sourceTree = "<group>"; };
-		CE91DD4915E915030031D0E8 /* SRAddFeedFilterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRAddFeedFilterController.h; sourceTree = "<group>"; };
-		CE91DD4A15E915030031D0E8 /* SRAddFeedFilterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRAddFeedFilterController.m; sourceTree = "<group>"; };
-		CE91DD4B15E915030031D0E8 /* SRFeedFiltersListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRFeedFiltersListController.h; sourceTree = "<group>"; };
-		CE91DD4C15E915030031D0E8 /* SRFeedFiltersListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRFeedFiltersListController.m; sourceTree = "<group>"; };
-		CE91DD4E15E915030031D0E8 /* SRPostInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRPostInfoViewController.h; sourceTree = "<group>"; };
-		CE91DD4F15E915030031D0E8 /* SRPostInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRPostInfoViewController.m; sourceTree = "<group>"; };
-		CE91DD5015E915030031D0E8 /* SRPostsListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRPostsListController.h; sourceTree = "<group>"; };
-		CE91DD5115E915030031D0E8 /* SRPostsListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRPostsListController.m; sourceTree = "<group>"; };
-		CE91DD5215E915030031D0E8 /* SRPostWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRPostWebViewController.h; sourceTree = "<group>"; };
-		CE91DD5315E915030031D0E8 /* SRPostWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRPostWebViewController.m; sourceTree = "<group>"; };
 		CE9B040C15E2CA6E00111B2F /* SRFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRFeed.h; sourceTree = "<group>"; };
 		CE9B040D15E2CA6E00111B2F /* SRFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRFeed.m; sourceTree = "<group>"; };
-		CE9B041515E2E05100111B2F /* JTModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTModel.h; sourceTree = "<group>"; };
-		CE9B041615E2E05100111B2F /* JTModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTModel.m; sourceTree = "<group>"; };
-		CE9B041815E2EC6F00111B2F /* SRFeedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRFeedModel.h; sourceTree = "<group>"; };
-		CE9B041915E2EC6F00111B2F /* SRFeedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRFeedModel.m; sourceTree = "<group>"; };
 		CE9ED7D415E8D26700646481 /* SRFilterReposter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRFilterReposter.h; sourceTree = "<group>"; };
 		CE9ED7D515E8D26700646481 /* SRFilterReposter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRFilterReposter.m; sourceTree = "<group>"; };
 		CEB3A06D15EA2CAD00D76599 /* UIButton+SRButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SRButtons.h"; sourceTree = "<group>"; };
@@ -311,10 +651,22 @@
 		CECD870E15E0062B0061DDB3 /* SRReposterMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRReposterMacros.h; sourceTree = "<group>"; };
 		CECD871415E008290061DDB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CECD871615E008340061DDB3 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CEFD2E2C1778942100AF51E2 /* SRFeedItemsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRFeedItemsModel.h; sourceTree = "<group>"; };
+		CEFD2E2D1778942100AF51E2 /* SRFeedItemsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRFeedItemsModel.m; sourceTree = "<group>"; };
+		CEFD2E591778958800AF51E2 /* SRFeedFiltersModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRFeedFiltersModel.h; sourceTree = "<group>"; };
+		CEFD2E5A1778958800AF51E2 /* SRFeedFiltersModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRFeedFiltersModel.m; sourceTree = "<group>"; };
+		CEFD2E5D177895F000AF51E2 /* SRArticleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRArticleCell.h; sourceTree = "<group>"; };
+		CEFD2E5E177895F000AF51E2 /* SRArticleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRArticleCell.m; sourceTree = "<group>"; };
+		CEFD2E5F177895F000AF51E2 /* SRArticleDescriptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRArticleDescriptionCell.h; sourceTree = "<group>"; };
+		CEFD2E60177895F000AF51E2 /* SRArticleDescriptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRArticleDescriptionCell.m; sourceTree = "<group>"; };
+		CEFD2E61177895F000AF51E2 /* SRArticleRepostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRArticleRepostCell.h; sourceTree = "<group>"; };
+		CEFD2E62177895F000AF51E2 /* SRArticleRepostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRArticleRepostCell.m; sourceTree = "<group>"; };
+		CEFD2E63177895F000AF51E2 /* SRArticleTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRArticleTitleCell.h; sourceTree = "<group>"; };
+		CEFD2E64177895F000AF51E2 /* SRArticleTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRArticleTitleCell.m; sourceTree = "<group>"; };
+		CEFD2E65177895F000AF51E2 /* SRFeedParamCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRFeedParamCell.h; sourceTree = "<group>"; };
+		CEFD2E66177895F000AF51E2 /* SRFeedParamCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRFeedParamCell.m; sourceTree = "<group>"; };
 		D9820B6515E4E44800ACD80E /* SRDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRDatabaseManager.h; sourceTree = "<group>"; };
 		D9820B6615E4E44800ACD80E /* SRDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRDatabaseManager.m; sourceTree = "<group>"; };
-		D9820BD815E50FC400ACD80E /* SRFeedItemsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRFeedItemsModel.h; sourceTree = "<group>"; };
-		D9820BD915E50FC400ACD80E /* SRFeedItemsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRFeedItemsModel.m; sourceTree = "<group>"; };
 		D9D6D9E215E364AA00B45095 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -323,6 +675,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE86B1E617785B320029089C /* Security.framework in Frameworks */,
+				CE86B1E417785B070029089C /* libOAuth.a in Frameworks */,
+				CE86B1E317785AF10029089C /* AdSupport.framework in Frameworks */,
+				CE86B1E117785ACC0029089C /* libReachability.a in Frameworks */,
+				CE86B1E017785AAE0029089C /* Social.framework in Frameworks */,
+				CE86B1DE17785A930029089C /* CoreMedia.framework in Frameworks */,
+				CE86B1DC17785A710029089C /* AVFoundation.framework in Frameworks */,
+				CE86B1DA1778590F0029089C /* libShareKitCore.a in Frameworks */,
+				CE86B1D9177859060029089C /* libfacebook_ios_sdk.a in Frameworks */,
+				CE86B1D7177859020029089C /* libFacebook.a in Frameworks */,
 				CE7A104D15E6B16E0004641C /* QuartzCore.framework in Frameworks */,
 				CEC2BFB115E43D94003FBA90 /* CoreData.framework in Frameworks */,
 				CE67942B15E137410052154A /* Twitter.framework in Frameworks */,
@@ -335,7 +697,6 @@
 				CE6793E515E0432B0052154A /* CFNetwork.framework in Frameworks */,
 				CECD86C215E000650061DDB3 /* UIKit.framework in Frameworks */,
 				CECD86C415E000650061DDB3 /* Foundation.framework in Frameworks */,
-				CE796CFE15E16A2700810F21 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,77 +916,190 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
-		CE796CFF15E16A9E00810F21 /* Resources */ = {
+		CE86B149177858D00029089C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE796D0015E16A9E00810F21 /* FacebookSDKResources.bundle */,
-				CE796D0115E16A9E00810F21 /* FBUserSettingsViewResources.bundle */,
+				CE86B17C177858D10029089C /* libShareKit.a */,
+				CE86B17E177858D10029089C /* ShareKit.bundle */,
+				CE86B180177858D10029089C /* libShareKitCore.a */,
+				CE86B182177858D10029089C /* libSSKeyChain.a */,
+				CE86B184177858D10029089C /* libOAuth.a */,
+				CE86B186177858D10029089C /* libReachability.a */,
+				CE86B188177858D10029089C /* libCopy.a */,
+				CE86B18A177858D10029089C /* libEmail.a */,
+				CE86B18C177858D10029089C /* libLogout.a */,
+				CE86B18E177858D10029089C /* libOpen in Safari.a */,
+				CE86B190177858D10029089C /* libPrint.a */,
+				CE86B192177858D10029089C /* libSave to Album.a */,
+				CE86B194177858D10029089C /* libText Message.a */,
+				CE86B196177858D10029089C /* libDelicious.a */,
+				CE86B198177858D10029089C /* libDiigo.a */,
+				CE86B19A177858D10029089C /* libEvernote.a */,
+				CE86B19C177858D10029089C /* libEvernote SDK.a */,
+				CE86B19E177858D10029089C /* libFacebook.a */,
+				CE86B1A0177858D10029089C /* libFoursquareV2.a */,
+				CE86B1A2177858D10029089C /* libFlickr.a */,
+				CE86B1A4177858D10029089C /* libFlickr SDK.a */,
+				CE86B1A6177858D10029089C /* libGoogle Plus.a */,
+				CE86B1A8177858D10029089C /* libGoogle Plus SDK.a */,
+				CE86B1AA177858D10029089C /* libGoogle Reader.a */,
+				CE86B1AC177858D10029089C /* libInstagram.a */,
+				CE86B1AE177858D10029089C /* libInstapaper.a */,
+				CE86B1B0177858D10029089C /* libKippt.a */,
+				CE86B1B2177858D10029089C /* libLinkedIn.a */,
+				CE86B1B4177858D10029089C /* libPinboard.a */,
+				CE86B1B6177858D10029089C /* libBuffer.a */,
+				CE86B1B8177858D10029089C /* libSina Weibo.a */,
+				CE86B1BA177858D10029089C /* libTumblr.a */,
+				CE86B1BC177858D10029089C /* libTwitter.a */,
+				CE86B1BE177858D10029089C /* libVKontakte.a */,
+				CE86B1C0177858D10029089C /* libSina Weibo.a */,
+				CE86B1C2177858D10029089C /* libReadability.a */,
+				CE86B1C4177858D10029089C /* libHatena.a */,
+				CE86B1C6177858D10029089C /* libPlurk.a */,
+				CE86B1C8177858D10029089C /* libDropbox.a */,
+				CE86B1CA177858D10029089C /* libDropbox SDK.a */,
+				CE86B1CC177858D10029089C /* libYouTube.a */,
+				CE86B1CE177858D10029089C /* libYouTube SDK.a */,
+				CE86B1D0177858D10029089C /* libPocket.a */,
+				CE86B1D2177858D10029089C /* libPocket SDK.a */,
 			);
-			name = Resources;
-			path = ../../../Documents/FacebookSDK/FacebookSDK.framework/Versions/A/Resources;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		CE91DD3715E915030031D0E8 /* Views */ = {
+		CE86B1F117785F350029089C /* FeedList */ = {
 			isa = PBXGroup;
 			children = (
-				CE91DD3815E915030031D0E8 /* Cells */,
-				CE91DD4315E915030031D0E8 /* Feeds */,
-				CE91DD4815E915030031D0E8 /* Filters */,
-				CE91DD4D15E915030031D0E8 /* Posts */,
+				CE86B1F217785F560029089C /* defaultFeedList.plist */,
 			);
-			path = Views;
+			path = FeedList;
 			sourceTree = "<group>";
 		};
-		CE91DD3815E915030031D0E8 /* Cells */ = {
+		CE86B1F417785FE10029089C /* Objects */ = {
 			isa = PBXGroup;
 			children = (
-				CE91DD3915E915030031D0E8 /* SRArticleCell.h */,
-				CE91DD3A15E915030031D0E8 /* SRArticleCell.m */,
-				CE91DD3B15E915030031D0E8 /* SRArticleDescriptionCell.h */,
-				CE91DD3C15E915030031D0E8 /* SRArticleDescriptionCell.m */,
-				CE91DD3D15E915030031D0E8 /* SRArticleRepostCell.h */,
-				CE91DD3E15E915030031D0E8 /* SRArticleRepostCell.m */,
-				CE91DD3F15E915030031D0E8 /* SRArticleTitleCell.h */,
-				CE91DD4015E915030031D0E8 /* SRArticleTitleCell.m */,
-				CE91DD4115E915030031D0E8 /* SRFeedParamCell.h */,
-				CE91DD4215E915030031D0E8 /* SRFeedParamCell.m */,
+				CE86B1F517785FE10029089C /* CDFeed.h */,
+				CE86B1F617785FE10029089C /* CDFeed.m */,
+				CE86B1F717785FE10029089C /* CDFeedFilter.h */,
+				CE86B1F817785FE10029089C /* CDFeedFilter.m */,
+				CE86B1F917785FE10029089C /* CDFeedItem.h */,
+				CE86B1FA17785FE10029089C /* CDFeedItem.m */,
 			);
-			path = Cells;
+			path = Objects;
 			sourceTree = "<group>";
 		};
-		CE91DD4315E915030031D0E8 /* Feeds */ = {
+		CE86B201177867F10029089C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CE91DD4415E915030031D0E8 /* SRFeedEditController.h */,
-				CE91DD4515E915030031D0E8 /* SRFeedEditController.m */,
-				CE91DD4615E915030031D0E8 /* SRFeedsListController.h */,
-				CE91DD4715E915030031D0E8 /* SRFeedsListController.m */,
+				CE86B24B1778852E0029089C /* AddFeedFilterViewController */,
+				CE86B24E1778852E0029089C /* EditFeedViewController */,
+				CE86B2511778852E0029089C /* FeedFiltersListViewController */,
+				CE86B2541778852E0029089C /* FeedListViewController */,
+				CE86B25A1778852E0029089C /* PostInfoViewController */,
+				CE86B25D1778852E0029089C /* PostsListViewController */,
+				CE86B2601778852E0029089C /* PostWebViewViewController */,
 			);
-			path = Feeds;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		CE91DD4815E915030031D0E8 /* Filters */ = {
+		CE86B21A17786DA70029089C /* Social */ = {
 			isa = PBXGroup;
 			children = (
-				CE91DD4915E915030031D0E8 /* SRAddFeedFilterController.h */,
-				CE91DD4A15E915030031D0E8 /* SRAddFeedFilterController.m */,
-				CE91DD4B15E915030031D0E8 /* SRFeedFiltersListController.h */,
-				CE91DD4C15E915030031D0E8 /* SRFeedFiltersListController.m */,
+				CE86B23817787F630029089C /* SHKConfigurator */,
+				CE86B22117786E090029089C /* RPLSHKFacebook.h */,
+				CE86B22217786E0A0029089C /* RPLSHKFacebook.m */,
+				CE86B21B17786DA70029089C /* SRFBReposter.h */,
+				CE86B21C17786DA70029089C /* SRFBReposter.m */,
+				CE86B21D17786DA70029089C /* SRTwitterReposter.h */,
+				CE86B21E17786DA70029089C /* SRTwitterReposter.m */,
 			);
-			path = Filters;
+			path = Social;
 			sourceTree = "<group>";
 		};
-		CE91DD4D15E915030031D0E8 /* Posts */ = {
+		CE86B23817787F630029089C /* SHKConfigurator */ = {
 			isa = PBXGroup;
 			children = (
-				CE91DD4E15E915030031D0E8 /* SRPostInfoViewController.h */,
-				CE91DD4F15E915030031D0E8 /* SRPostInfoViewController.m */,
-				CE91DD5015E915030031D0E8 /* SRPostsListController.h */,
-				CE91DD5115E915030031D0E8 /* SRPostsListController.m */,
-				CE91DD5215E915030031D0E8 /* SRPostWebViewController.h */,
-				CE91DD5315E915030031D0E8 /* SRPostWebViewController.m */,
+				CE86B23917787F640029089C /* RPLSHKConfigurator.h */,
+				CE86B23A17787F640029089C /* RPLSHKConfigurator.m */,
+				CE86B23B17787F640029089C /* SHK+AutoShare.h */,
+				CE86B23C17787F640029089C /* SHK+AutoShare.m */,
 			);
-			path = Posts;
+			path = SHKConfigurator;
+			sourceTree = "<group>";
+		};
+		CE86B24B1778852E0029089C /* AddFeedFilterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE86B24C1778852E0029089C /* SRAddFeedFilterController.h */,
+				CE86B24D1778852E0029089C /* SRAddFeedFilterController.m */,
+			);
+			path = AddFeedFilterViewController;
+			sourceTree = "<group>";
+		};
+		CE86B24E1778852E0029089C /* EditFeedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE86B24F1778852E0029089C /* SREditFeedViewController.h */,
+				CE86B2501778852E0029089C /* SREditFeedViewController.m */,
+			);
+			path = EditFeedViewController;
+			sourceTree = "<group>";
+		};
+		CE86B2511778852E0029089C /* FeedFiltersListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CEFD2E581778958800AF51E2 /* Model */,
+				CE86B2521778852E0029089C /* SRFeedFiltersListController.h */,
+				CE86B2531778852E0029089C /* SRFeedFiltersListController.m */,
+			);
+			path = FeedFiltersListViewController;
+			sourceTree = "<group>";
+		};
+		CE86B2541778852E0029089C /* FeedListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE86B2551778852E0029089C /* Model */,
+				CE86B2581778852E0029089C /* SRFeedsListViewController.h */,
+				CE86B2591778852E0029089C /* SRFeedsListViewController.m */,
+			);
+			path = FeedListViewController;
+			sourceTree = "<group>";
+		};
+		CE86B2551778852E0029089C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE86B2561778852E0029089C /* SRFeedModel.h */,
+				CE86B2571778852E0029089C /* SRFeedModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE86B25A1778852E0029089C /* PostInfoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE86B25B1778852E0029089C /* SRPostInfoViewController.h */,
+				CE86B25C1778852E0029089C /* SRPostInfoViewController.m */,
+			);
+			path = PostInfoViewController;
+			sourceTree = "<group>";
+		};
+		CE86B25D1778852E0029089C /* PostsListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CEFD2E2B1778942100AF51E2 /* Model */,
+				CE86B25E1778852E0029089C /* SRPostsListViewController.h */,
+				CE86B25F1778852E0029089C /* SRPostsListViewController.m */,
+			);
+			path = PostsListViewController;
+			sourceTree = "<group>";
+		};
+		CE86B2601778852E0029089C /* PostWebViewViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE86B2611778852E0029089C /* SRPostWebViewController.h */,
+				CE86B2621778852E0029089C /* SRPostWebViewController.m */,
+			);
+			path = PostWebViewViewController;
 			sourceTree = "<group>";
 		};
 		CEB3A07115EA2DEA00D76599 /* Images */ = {
@@ -646,14 +1120,9 @@
 		CEC2BF8215E43879003FBA90 /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				CE86B1F417785FE10029089C /* Objects */,
 				D9820B6515E4E44800ACD80E /* SRDatabaseManager.h */,
 				D9820B6615E4E44800ACD80E /* SRDatabaseManager.m */,
-				CE787F1515E5812300CE6A91 /* CDFeed.h */,
-				CE787F1615E5812300CE6A91 /* CDFeed.m */,
-				CE787F1215E5812300CE6A91 /* CDFeedItem.h */,
-				CE787F1315E5812300CE6A91 /* CDFeedItem.m */,
-				CE787F0F15E5812200CE6A91 /* CDFeedFilter.h */,
-				CE787F1015E5812200CE6A91 /* CDFeedFilter.m */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -683,11 +1152,16 @@
 		CECD86C015E000650061DDB3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CE796CFF15E16A9E00810F21 /* Resources */,
+				CE86B148177858D00029089C /* ShareKit.xcodeproj */,
+				CE86B1D8177859060029089C /* libfacebook_ios_sdk.a */,
 				D9D6D9E215E364AA00B45095 /* libsqlite3.dylib */,
 				CE6793EE15E0439E0052154A /* libxml2.dylib */,
 				CE6793F015E044A40052154A /* libz.dylib */,
-				CE796CFD15E16A2700810F21 /* FacebookSDK.framework */,
+				CE86B1E517785B320029089C /* Security.framework */,
+				CE86B1E217785AF10029089C /* AdSupport.framework */,
+				CE86B1DF17785AAE0029089C /* Social.framework */,
+				CE86B1DD17785A930029089C /* CoreMedia.framework */,
+				CE86B1DB17785A710029089C /* AVFoundation.framework */,
 				CE7A104C15E6B16E0004641C /* QuartzCore.framework */,
 				CEC2BFB015E43D94003FBA90 /* CoreData.framework */,
 				CE67942A15E137410052154A /* Twitter.framework */,
@@ -756,7 +1230,7 @@
 				CEC2BF8215E43879003FBA90 /* Database */,
 				CE6793F515E045670052154A /* Categories */,
 				CECD871715E00A690061DDB3 /* Objects */,
-				CE91DD3715E915030031D0E8 /* Views */,
+				CE86B201177867F10029089C /* ViewControllers */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -773,6 +1247,7 @@
 		CECD870F15E008070061DDB3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CE86B1F117785F350029089C /* FeedList */,
 				CEB3A07115EA2DEA00D76599 /* Images */,
 				CECD871015E008070061DDB3 /* Localization */,
 				CEC2BF9F15E439B3003FBA90 /* Database.xcdatamodeld */,
@@ -791,26 +1266,53 @@
 		CECD871715E00A690061DDB3 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
-				CE9B041515E2E05100111B2F /* JTModel.h */,
-				CE9B041615E2E05100111B2F /* JTModel.m */,
-				CE9B041815E2EC6F00111B2F /* SRFeedModel.h */,
-				CE9B041915E2EC6F00111B2F /* SRFeedModel.m */,
-				D9820BD815E50FC400ACD80E /* SRFeedItemsModel.h */,
-				D9820BD915E50FC400ACD80E /* SRFeedItemsModel.m */,
-				CE7A106315E6B43B0004641C /* SRFeedFiltersModel.h */,
-				CE7A106415E6B43B0004641C /* SRFeedFiltersModel.m */,
+				CEFD2E5C177895F000AF51E2 /* Cells */,
+				CE86B21A17786DA70029089C /* Social */,
+				CE86B1FE177862BA0029089C /* JTModel.h */,
+				CE86B1FF177862BA0029089C /* JTModel.m */,
 				CE9B040C15E2CA6E00111B2F /* SRFeed.h */,
 				CE9B040D15E2CA6E00111B2F /* SRFeed.m */,
 				CE7A106615E6E7330004641C /* SRFeedFilter.h */,
 				CE7A106715E6E7330004641C /* SRFeedFilter.m */,
-				CE67942C15E13DA10052154A /* SRTwitterReposter.h */,
-				CE67942D15E13DA10052154A /* SRTwitterReposter.m */,
-				CE796D0A15E1A30900810F21 /* SRFBConnect.h */,
-				CE796D0B15E1A30900810F21 /* SRFBConnect.m */,
 				CE9ED7D415E8D26700646481 /* SRFilterReposter.h */,
 				CE9ED7D515E8D26700646481 /* SRFilterReposter.m */,
 			);
 			path = Objects;
+			sourceTree = "<group>";
+		};
+		CEFD2E2B1778942100AF51E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEFD2E2C1778942100AF51E2 /* SRFeedItemsModel.h */,
+				CEFD2E2D1778942100AF51E2 /* SRFeedItemsModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEFD2E581778958800AF51E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEFD2E591778958800AF51E2 /* SRFeedFiltersModel.h */,
+				CEFD2E5A1778958800AF51E2 /* SRFeedFiltersModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEFD2E5C177895F000AF51E2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CEFD2E5D177895F000AF51E2 /* SRArticleCell.h */,
+				CEFD2E5E177895F000AF51E2 /* SRArticleCell.m */,
+				CEFD2E5F177895F000AF51E2 /* SRArticleDescriptionCell.h */,
+				CEFD2E60177895F000AF51E2 /* SRArticleDescriptionCell.m */,
+				CEFD2E61177895F000AF51E2 /* SRArticleRepostCell.h */,
+				CEFD2E62177895F000AF51E2 /* SRArticleRepostCell.m */,
+				CEFD2E63177895F000AF51E2 /* SRArticleTitleCell.h */,
+				CEFD2E64177895F000AF51E2 /* SRArticleTitleCell.m */,
+				CEFD2E65177895F000AF51E2 /* SRFeedParamCell.h */,
+				CEFD2E66177895F000AF51E2 /* SRFeedParamCell.m */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -827,6 +1329,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				CE86B23717787F430029089C /* PBXTargetDependency */,
+				CE86B1D6177858ED0029089C /* PBXTargetDependency */,
+				CE86B1D4177858E50029089C /* PBXTargetDependency */,
 			);
 			name = SRReposter;
 			productName = SRReposter;
@@ -873,6 +1378,12 @@
 			mainGroup = CECD86B215E000650061DDB3;
 			productRefGroup = CECD86BE15E000650061DDB3 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CE86B149177858D00029089C /* Products */;
+					ProjectRef = CE86B148177858D00029089C /* ShareKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CECD86BC15E000650061DDB3 /* SRReposter */,
@@ -881,15 +1392,325 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		CE86B17C177858D10029089C /* libShareKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libShareKit.a;
+			remoteRef = CE86B17B177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B17E177858D10029089C /* ShareKit.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ShareKit.bundle;
+			remoteRef = CE86B17D177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B180177858D10029089C /* libShareKitCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libShareKitCore.a;
+			remoteRef = CE86B17F177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B182177858D10029089C /* libSSKeyChain.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSSKeyChain.a;
+			remoteRef = CE86B181177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B184177858D10029089C /* libOAuth.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOAuth.a;
+			remoteRef = CE86B183177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B186177858D10029089C /* libReachability.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReachability.a;
+			remoteRef = CE86B185177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B188177858D10029089C /* libCopy.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCopy.a;
+			remoteRef = CE86B187177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B18A177858D10029089C /* libEmail.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEmail.a;
+			remoteRef = CE86B189177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B18C177858D10029089C /* libLogout.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLogout.a;
+			remoteRef = CE86B18B177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B18E177858D10029089C /* libOpen in Safari.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libOpen in Safari.a";
+			remoteRef = CE86B18D177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B190177858D10029089C /* libPrint.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPrint.a;
+			remoteRef = CE86B18F177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B192177858D10029089C /* libSave to Album.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libSave to Album.a";
+			remoteRef = CE86B191177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B194177858D10029089C /* libText Message.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libText Message.a";
+			remoteRef = CE86B193177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B196177858D10029089C /* libDelicious.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDelicious.a;
+			remoteRef = CE86B195177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B198177858D10029089C /* libDiigo.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDiigo.a;
+			remoteRef = CE86B197177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B19A177858D10029089C /* libEvernote.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEvernote.a;
+			remoteRef = CE86B199177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B19C177858D10029089C /* libEvernote SDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libEvernote SDK.a";
+			remoteRef = CE86B19B177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B19E177858D10029089C /* libFacebook.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFacebook.a;
+			remoteRef = CE86B19D177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B1A0177858D10029089C /* libFoursquareV2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFoursquareV2.a;
+			remoteRef = CE86B19F177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B1A2177858D10029089C /* libFlickr.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFlickr.a;
+			remoteRef = CE86B1A1177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B1A4177858D10029089C /* libFlickr SDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFlickr SDK.a";
+			remoteRef = CE86B1A3177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B1A6177858D10029089C /* libGoogle Plus.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libGoogle Plus.a";
+			remoteRef = CE86B1A5177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B1A8177858D10029089C /* libGoogle Plus SDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libGoogle Plus SDK.a";
+			remoteRef = CE86B1A7177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B1AA177858D10029089C /* libGoogle Reader.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libGoogle Reader.a";
+			remoteRef = CE86B1A9177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B1AC177858D10029089C /* libInstagram.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libInstagram.a;
+			remoteRef = CE86B1AB177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B1AE177858D10029089C /* libInstapaper.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libInstapaper.a;
+			remoteRef = CE86B1AD177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B1B0177858D10029089C /* libKippt.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKippt.a;
+			remoteRef = CE86B1AF177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B1B2177858D10029089C /* libLinkedIn.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLinkedIn.a;
+			remoteRef = CE86B1B1177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B1B4177858D10029089C /* libPinboard.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPinboard.a;
+			remoteRef = CE86B1B3177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B1B6177858D10029089C /* libBuffer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBuffer.a;
+			remoteRef = CE86B1B5177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B1B8177858D10029089C /* libSina Weibo.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libSina Weibo.a";
+			remoteRef = CE86B1B7177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B1BA177858D10029089C /* libTumblr.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTumblr.a;
+			remoteRef = CE86B1B9177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B1BC177858D10029089C /* libTwitter.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTwitter.a;
+			remoteRef = CE86B1BB177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B1BE177858D10029089C /* libVKontakte.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libVKontakte.a;
+			remoteRef = CE86B1BD177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B1C0177858D10029089C /* libSina Weibo.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libSina Weibo.a";
+			remoteRef = CE86B1BF177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B1C2177858D10029089C /* libReadability.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReadability.a;
+			remoteRef = CE86B1C1177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B1C4177858D10029089C /* libHatena.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libHatena.a;
+			remoteRef = CE86B1C3177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B1C6177858D10029089C /* libPlurk.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPlurk.a;
+			remoteRef = CE86B1C5177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B1C8177858D10029089C /* libDropbox.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDropbox.a;
+			remoteRef = CE86B1C7177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B1CA177858D10029089C /* libDropbox SDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libDropbox SDK.a";
+			remoteRef = CE86B1C9177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B1CC177858D10029089C /* libYouTube.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libYouTube.a;
+			remoteRef = CE86B1CB177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B1CE177858D10029089C /* libYouTube SDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libYouTube SDK.a";
+			remoteRef = CE86B1CD177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B1D0177858D10029089C /* libPocket.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPocket.a;
+			remoteRef = CE86B1CF177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE86B1D2177858D10029089C /* libPocket SDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPocket SDK.a";
+			remoteRef = CE86B1D1177858D10029089C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		CECD86BB15E000650061DDB3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CECD86CC15E000650061DDB3 /* InfoPlist.strings in Resources */,
+				CE86B23517787F1F0029089C /* ShareKit.bundle in Resources */,
 				CECD871315E008290061DDB3 /* Localizable.strings in Resources */,
-				CE796D0315E16A9E00810F21 /* FacebookSDKResources.bundle in Resources */,
-				CE796D0415E16A9E00810F21 /* FBUserSettingsViewResources.bundle in Resources */,
 				CEB3A07A15EA2DEA00D76599 /* fb_selected.png in Resources */,
 				CEB3A07B15EA2DEA00D76599 /* fb_selected@2x.png in Resources */,
 				CEB3A07C15EA2DEA00D76599 /* fb_unselected.png in Resources */,
@@ -910,6 +1731,7 @@
 				CE1E39961610F07C00098C98 /* Default.png in Resources */,
 				CE1E39981610F08400098C98 /* Default@2x.png in Resources */,
 				CE1E399A1610F08D00098C98 /* Default-568h@2x.png in Resources */,
+				CE86B1F317785F560029089C /* defaultFeedList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -948,32 +1770,11 @@
 				CECD86D215E000650061DDB3 /* SRReporter.m in Sources */,
 				CE67940C15E055DA0052154A /* NSDate+InternetDateTime.m in Sources */,
 				CE67940F15E0563D0052154A /* NSArray+Extras.m in Sources */,
-				CE67942E15E13DA20052154A /* SRTwitterReposter.m in Sources */,
-				CE796D0C15E1A30900810F21 /* SRFBConnect.m in Sources */,
 				CE9B040E15E2CA6E00111B2F /* SRFeed.m in Sources */,
-				CE9B041715E2E05200111B2F /* JTModel.m in Sources */,
-				CE9B041A15E2EC6F00111B2F /* SRFeedModel.m in Sources */,
 				CEC2BFA115E439B4003FBA90 /* Database.xcdatamodeld in Sources */,
 				D9820B6715E4E44900ACD80E /* SRDatabaseManager.m in Sources */,
-				D9820BDA15E50FC400ACD80E /* SRFeedItemsModel.m in Sources */,
-				CE787F1115E5812200CE6A91 /* CDFeedFilter.m in Sources */,
-				CE787F1415E5812300CE6A91 /* CDFeedItem.m in Sources */,
-				CE787F1715E5812300CE6A91 /* CDFeed.m in Sources */,
-				CE7A106515E6B43B0004641C /* SRFeedFiltersModel.m in Sources */,
 				CE7A106815E6E7340004641C /* SRFeedFilter.m in Sources */,
 				CE9ED7D615E8D26700646481 /* SRFilterReposter.m in Sources */,
-				CE91DD5415E915030031D0E8 /* SRArticleCell.m in Sources */,
-				CE91DD5515E915030031D0E8 /* SRArticleDescriptionCell.m in Sources */,
-				CE91DD5615E915030031D0E8 /* SRArticleRepostCell.m in Sources */,
-				CE91DD5715E915030031D0E8 /* SRArticleTitleCell.m in Sources */,
-				CE91DD5815E915030031D0E8 /* SRFeedParamCell.m in Sources */,
-				CE91DD5915E915030031D0E8 /* SRFeedEditController.m in Sources */,
-				CE91DD5A15E915030031D0E8 /* SRFeedsListController.m in Sources */,
-				CE91DD5B15E915030031D0E8 /* SRAddFeedFilterController.m in Sources */,
-				CE91DD5C15E915030031D0E8 /* SRFeedFiltersListController.m in Sources */,
-				CE91DD5D15E915030031D0E8 /* SRPostInfoViewController.m in Sources */,
-				CE91DD5E15E915030031D0E8 /* SRPostsListController.m in Sources */,
-				CE91DD5F15E915030031D0E8 /* SRPostWebViewController.m in Sources */,
 				CEB3A06F15EA2CAD00D76599 /* UIButton+SRButtons.m in Sources */,
 				CE1E38FA1610E73300098C98 /* MagicalImportFunctions.m in Sources */,
 				CE1E38FB1610E73300098C98 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
@@ -1010,6 +1811,30 @@
 				CE1E39451610E9AE00098C98 /* NSDate+InternetDateTime.m in Sources */,
 				CE1E39461610E9AE00098C98 /* NSString+HTML.m in Sources */,
 				CE1E39471610E9AE00098C98 /* NSString+XMLEntities.m in Sources */,
+				CE86B1FB17785FE10029089C /* CDFeed.m in Sources */,
+				CE86B1FC17785FE10029089C /* CDFeedFilter.m in Sources */,
+				CE86B1FD17785FE10029089C /* CDFeedItem.m in Sources */,
+				CE86B200177862BB0029089C /* JTModel.m in Sources */,
+				CE86B21F17786DA70029089C /* SRFBReposter.m in Sources */,
+				CE86B22017786DA70029089C /* SRTwitterReposter.m in Sources */,
+				CE86B22317786E0A0029089C /* RPLSHKFacebook.m in Sources */,
+				CE86B23D17787F640029089C /* RPLSHKConfigurator.m in Sources */,
+				CE86B23E17787F640029089C /* SHK+AutoShare.m in Sources */,
+				CE86B2631778852E0029089C /* SRAddFeedFilterController.m in Sources */,
+				CE86B2641778852E0029089C /* SREditFeedViewController.m in Sources */,
+				CE86B2651778852E0029089C /* SRFeedFiltersListController.m in Sources */,
+				CE86B2661778852E0029089C /* SRFeedModel.m in Sources */,
+				CE86B2671778852E0029089C /* SRFeedsListViewController.m in Sources */,
+				CE86B2681778852E0029089C /* SRPostInfoViewController.m in Sources */,
+				CE86B2691778852E0029089C /* SRPostsListViewController.m in Sources */,
+				CE86B26A1778852E0029089C /* SRPostWebViewController.m in Sources */,
+				CEFD2E2E1778942100AF51E2 /* SRFeedItemsModel.m in Sources */,
+				CEFD2E5B1778958800AF51E2 /* SRFeedFiltersModel.m in Sources */,
+				CEFD2E67177895F100AF51E2 /* SRArticleCell.m in Sources */,
+				CEFD2E68177895F100AF51E2 /* SRArticleDescriptionCell.m in Sources */,
+				CEFD2E69177895F100AF51E2 /* SRArticleRepostCell.m in Sources */,
+				CEFD2E6A177895F100AF51E2 /* SRArticleTitleCell.m in Sources */,
+				CEFD2E6B177895F100AF51E2 /* SRFeedParamCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1025,6 +1850,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CE86B1D4177858E50029089C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Static Library Core";
+			targetProxy = CE86B1D3177858E50029089C /* PBXContainerItemProxy */;
+		};
+		CE86B1D6177858ED0029089C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Facebook;
+			targetProxy = CE86B1D5177858ED0029089C /* PBXContainerItemProxy */;
+		};
+		CE86B23717787F430029089C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Resource Bundle";
+			targetProxy = CE86B23617787F430029089C /* PBXContainerItemProxy */;
+		};
 		CECD86E715E000650061DDB3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CECD86BC15E000650061DDB3 /* SRReposter */;
@@ -1112,16 +1952,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../Documents/FacebookSDK\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SRReposter/SRReposter-Prefix.pch";
-				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";
+				HEADER_SEARCH_PATHS = (
+					"${SDK_DIR}/usr/include/libxml2",
+					"\"$(SRCROOT)/Submodules/ShareKit\"/**",
+				);
 				INFOPLIST_FILE = "SRReposter/SRReposter-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_LDFLAGS = "-lsqlite3.0";
+				OTHER_LDFLAGS = (
+					"-lsqlite3.0",
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = armv7;
@@ -1133,16 +1977,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../Documents/FacebookSDK\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SRReposter/SRReposter-Prefix.pch";
-				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";
+				HEADER_SEARCH_PATHS = (
+					"${SDK_DIR}/usr/include/libxml2",
+					"\"$(SRCROOT)/Submodules/ShareKit\"/**",
+				);
 				INFOPLIST_FILE = "SRReposter/SRReposter-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_LDFLAGS = "-lsqlite3.0";
+				OTHER_LDFLAGS = (
+					"-lsqlite3.0",
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = armv7;

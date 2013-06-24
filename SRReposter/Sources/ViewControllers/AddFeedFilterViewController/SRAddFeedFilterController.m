@@ -8,8 +8,9 @@
 #import "SRAddFeedFilterController.h"
 #import "SRFeedParamCell.h"
 #import "SRArticleRepostCell.h"
-#import "SRFBConnect.h"
+#import "SRFBReposter.h"
 #import "SRTwitterReposter.h"
+#import "RPLSHKFacebook.h"
 
 @interface SRAddFeedFilterController ()
 {
@@ -139,18 +140,16 @@
 
 -(void)fbRepostButtonTouch:(id)sender
 {
-    [SRFBConnect checkAuthWithFinishBlock:^(BOOL authResult)
-     {
-         if (authResult)
-         {
-            self.feedFilter.repostFB=[NSNumber numberWithBool:![self.feedFilter.repostFB boolValue]];
-            [self.tableView reloadData];
-         } else
-         {
-             UIAlertView *alertView=[[UIAlertView alloc] initWithTitle:@"" message:NSLocalizedString(@"[Sign in Facebook account first]", nil) delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-             [alertView show];
-         }
-     }];
+    RPLSHKFacebook *shkFb=[[RPLSHKFacebook alloc] init];
+    [shkFb authorizeWithFinishBlock:^(NSString *code)
+    {
+        DLog(@"");
+        self.feedFilter.repostFB=[NSNumber numberWithBool:![self.feedFilter.repostFB boolValue]];
+        [self.tableView reloadData];
+    } errorBlock:^(NSError *error)
+    {
+        [SVProgressHUD showErrorWithStatus:error.localizedDescription];
+    }];
 }
 
 

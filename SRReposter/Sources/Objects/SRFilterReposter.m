@@ -7,7 +7,7 @@
 
 #import "SRFilterReposter.h"
 #import "CDFeedFilter.h"
-#import "SRFBConnect.h"
+#import "SRFBReposter.h"
 #import "SRTwitterReposter.h"
 
 @interface SRFilterReposter()
@@ -73,10 +73,11 @@
             }
         }
      
-                [SRFBConnect repostFeedItems:[repostFBItemsSet allObjects] withFinishBlock:^(NSUInteger repostedItemsCount)
-                 {
-                     DLog(@"REPOSTED COUNT %d",repostedItemsCount);
-                 }];
+        SRFBReposter *fbReposter=[[SRFBReposter alloc] init];
+        [fbReposter repostFeedItems:repostFBItemsSet.allObjects withFinishBlock:^(NSUInteger repostedItemsCount)
+         {
+             DLog(@"REPOSTED COUNT %d",repostedItemsCount);
+         }];
 
 
         DLog(@"REPOST TO TW COUNT %d",repostTWItemsSet.count);
@@ -100,11 +101,7 @@
         {
             NSPredicate *titlePredicate = [NSPredicate predicateWithFormat:@"title CONTAINS[cd] %@",keyword];
             NSPredicate *summaryPredicate = [NSPredicate predicateWithFormat:@"summary CONTAINS[cd] %@",keyword];
-        
-            predicate=[NSCompoundPredicate orPredicateWithSubpredicates:
-                                    [NSArray arrayWithObjects:predicate,
-                                                              titlePredicate,
-                                                              summaryPredicate, nil]];
+            predicate=[NSCompoundPredicate orPredicateWithSubpredicates:@[predicate,titlePredicate,summaryPredicate]];
         }
 
         return predicate;

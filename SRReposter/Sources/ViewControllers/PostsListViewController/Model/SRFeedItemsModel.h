@@ -11,9 +11,6 @@
 #import "CDFeed.h"
 
 @interface SRFeedItemsModel : JTModel <MWFeedParserDelegate>
-{
-    CDFeed  *_feed;
-}
 
 -(id)initWithFeed:(CDFeed*)feed;
 -(void)refresh;

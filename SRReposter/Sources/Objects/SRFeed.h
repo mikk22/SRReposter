@@ -8,10 +8,6 @@
 #import <Foundation/Foundation.h>
 
 @interface SRFeed : NSObject
-{
-    NSString    *_name;
-    NSString    *_url;
-}
 
 @property (nonatomic, copy)   NSString    *name;
 @property (nonatomic, copy)   NSString    *url;

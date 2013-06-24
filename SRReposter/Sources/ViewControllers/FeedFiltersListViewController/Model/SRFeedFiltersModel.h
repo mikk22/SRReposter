@@ -11,9 +11,6 @@
 #import "SRFeedFilter.h"
 
 @interface SRFeedFiltersModel : JTModel
-{
-    CDFeed  *_feed;
-}
 
 -(id)initWithFeed:(CDFeed*)feed;
 

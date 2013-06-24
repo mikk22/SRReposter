@@ -9,12 +9,6 @@
 #import "CDFeedFilter.h"
 
 @interface SRFeedFilter : NSObject
-{
-    NSString    *_name;
-    NSArray     *_keywords;
-    BOOL        _repostFB;
-    BOOL        _repostTW;
-}
 
 @property (nonatomic, copy)         NSString    *name;
 @property (nonatomic, strong)       NSArray     *keywords;

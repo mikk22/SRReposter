@@ -83,7 +83,7 @@ typedef enum
         feed.url=[newItem objectForKey:@"url"];
     }
     
-    [localContext MR_save];
+    [localContext MR_saveToPersistentStoreAndWait];
 
     //assume we load these 5 records from local storage
     [feedModel load];

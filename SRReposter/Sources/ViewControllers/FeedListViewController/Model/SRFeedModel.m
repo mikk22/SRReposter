@@ -11,7 +11,9 @@
 #import "SRDatabaseManager.h"
 
 @interface SRFeedModel()
-    -(void)_loadModel;
+-(void)_loadModel;
+-(NSArray*)_loadDefaultFeedList;
+
 @end
 
 @implementation SRFeedModel
@@ -28,34 +30,34 @@
 }
 
 
+-(NSArray*)_loadDefaultFeedList
+{
+    NSString *plistFile = [NSBundle.mainBundle.resourcePath
+                           stringByAppendingPathComponent:@"defaultFeedList.plist"];
+    
+    return [NSArray arrayWithContentsOfFile:plistFile];
+}
+
 -(void)_preloadData
 {
     if(![CDFeed MR_countOfEntities])
     {
         NSManagedObjectContext *localContext    = [NSManagedObjectContext MR_contextForCurrentThread];
-            
-        CDFeed *feed=[CDFeed MR_createInContext:localContext];
-        feed.name=@"YAHOO NEWS";
-        feed.url=@"http://rss.news.yahoo.com/rss/entertainment";
 
-
-        feed=[CDFeed MR_createInContext:localContext];
-        feed.name=@"vmwstudios";
-        feed.url=@"http://feeds.feedburner.com/vmwstudios";
-
-        feed=[CDFeed MR_createInContext:localContext];
-        feed.name=@"cocoawithlove";
-        feed.url=@"http://cocoawithlove.com/feeds/posts/default";
-
-        feed=[CDFeed MR_createInContext:localContext];
-        feed.name=@"RayWenderlich";
-        feed.url=@"http://feeds.feedburner.com/RayWenderlich";
-
-         feed=[CDFeed MR_createInContext:localContext];
-        feed.name=@"maniacdev";
-        feed.url=@"http://feeds.feedburner.com/maniacdev";
+        NSArray *defaultFeedList=[self _loadDefaultFeedList];
+        DLog(@"DEFAULT FEED LIST %@",defaultFeedList);
         
-        [localContext MR_save];
+        for (NSDictionary *feedItem in defaultFeedList)
+        {
+            if ([feedItem objectForKey:@"Name"] && [feedItem objectForKey:@"Url"])
+            {
+                CDFeed *feed=[CDFeed MR_createInContext:localContext];
+                feed.name=[feedItem objectForKey:@"Name"];
+                feed.url=[feedItem objectForKey:@"Url"];
+            }
+        }
+        
+        [localContext MR_saveToPersistentStoreAndWait];
     };
     
     
@@ -87,7 +89,7 @@
         CDFeed *feed=[CDFeed MR_createEntity];
         feed.name=name;
         feed.url=url;
-        [feed.managedObjectContext MR_save];
+        [feed.managedObjectContext MR_saveToPersistentStoreAndWait];
         [super addObject:feed];
     } else
     {
@@ -98,7 +100,7 @@
 
 -(void)updateObject:(id)anObject
 {
-    [[NSManagedObjectContext MR_contextForCurrentThread] MR_save];
+    [[NSManagedObjectContext MR_contextForCurrentThread] MR_saveToPersistentStoreAndWait];
     [super updateObject:anObject];
 }
 
@@ -132,7 +134,7 @@
     CDFeed *feed=[[CDFeed MR_findAll] objectAtIndex:objIndex];
     feed.name=newFeedItem.name;
     feed.url=newFeedItem.url;
-    [[NSManagedObjectContext MR_defaultContext] MR_save];
+    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
     [super replaceObject:anObject withObject:feed];
 }
 

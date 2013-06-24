@@ -12,9 +12,10 @@
 #import "SRArticleRepostCell.h"
 #import "SRTwitterReposter.h"
 #import "SVProgressHUD.h"
-#import "SRFBConnect.h"
+#import "SRFBReposter.h"
 
 #import "NSString+HTML.h"
+#import "RPLSHKFacebook.h"
 
 enum
 {
@@ -26,9 +27,6 @@ enum
 };
 
 @interface SRPostInfoViewController ()
-{
-    CDFeedItem  *_feedItem;
-}
 
 +(NSDictionary*)dictionaryFromFeedItem:(CDFeedItem*)cdFeedItem;
 
@@ -38,7 +36,6 @@ enum
 -(UITableViewCell*)articleLinkCellForTableview:(UITableView*)tableView indexPath:(NSIndexPath*)indexPath;
 -(SRArticleRepostCell*)articleRepostCellForTableview:(UITableView*)tableView indexPath:(NSIndexPath*)indexPath;
 
-
 //buttons touches
 -(void)fbRepostButtonTouch:(id)sender;
 -(void)twRepostButtonTouch:(id)sender;
@@ -46,14 +43,6 @@ enum
 @end
 
 @implementation SRPostInfoViewController
-
-@synthesize feedItem=_feedItem;
-
--(void)dealloc
-{
-    self.feedItem=nil;
-}
-
 
 +(NSDictionary*)dictionaryFromFeedItem:(CDFeedItem*)cdFeedItem
 {
@@ -74,7 +63,6 @@ enum
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
     self.tableView.tableHeaderView=[[UIView alloc] initWithFrame:CGRectZero];
     self.tableView.tableFooterView=[[UIView alloc] initWithFrame:CGRectZero];
 }
@@ -96,28 +84,31 @@ enum
 
 -(void)fbRepostButtonTouch:(id)sender
 {
-    [SRFBConnect checkAuthWithFinishBlock:^(BOOL authResult)
-    {
-        if (authResult)
-        {
-            NSDictionary *feedItem=[SRPostInfoViewController dictionaryFromFeedItem:self.feedItem];
-            [SRFBConnect repostFeedItem:feedItem withFinishBlock:^(BOOL result)
-            {
-                if (result)
-                {
-                    self.feedItem.postedFB=[NSNumber numberWithBool:YES];
-                    [[NSManagedObjectContext MR_defaultContext] MR_save];
-                    [self.tableView reloadData];
-                    [SVProgressHUD showSuccessWithStatus:NSLocalizedString(@"[Feed Item posted]", nil) duration:SHOW_MESSAGE_DEFAULT_TIME];
-                }
-                else
-                    [SVProgressHUD showErrorWithStatus:NSLocalizedString(@"[Oops! An error has occured!]", nil) duration:SHOW_MESSAGE_DEFAULT_TIME];
-            }];
-        } else 
-        {
-            [SVProgressHUD showErrorWithStatus:NSLocalizedString(@"[Oops! An error has occured!]", nil) duration:SHOW_MESSAGE_DEFAULT_TIME];
-        }
-    }];
+    DLog(@"");
+    RPLSHKFacebook *shkFb=[[RPLSHKFacebook alloc] init];
+    [shkFb authorizeWithFinishBlock:^(NSString *code)
+     {
+         DLog(@"CODE %@",code);
+         NSDictionary *feedItem=[SRPostInfoViewController dictionaryFromFeedItem:self.feedItem];
+         SRFBReposter *fbReposter=[[SRFBReposter alloc] init];
+         
+         [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeGradient];
+         [fbReposter repostFeedItem:feedItem withFinishBlock:^(BOOL result)
+          {
+              if (result)
+              {
+                  self.feedItem.postedFB=[NSNumber numberWithBool:YES];
+                  [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+                  [self.tableView reloadData];
+                  [SVProgressHUD showSuccessWithStatus:NSLocalizedString(@"[Feed Item posted]", nil)];
+              }
+              else
+                  [SVProgressHUD showErrorWithStatus:NSLocalizedString(@"[Oops! An error has occured!]", nil)];
+          }];
+     } errorBlock:^(NSError *error)
+     {
+         [SVProgressHUD showErrorWithStatus:error.localizedDescription];
+     }];
 }
 
 
@@ -131,12 +122,12 @@ enum
              if (result)
              {
                  self.feedItem.postedTW=[NSNumber numberWithBool:YES];
-                 [[NSManagedObjectContext MR_defaultContext] MR_save];
-                 [SVProgressHUD showSuccessWithStatus:NSLocalizedString(@"[Tweet posted]", nil) duration:SHOW_MESSAGE_DEFAULT_TIME];
+                 [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+                 [SVProgressHUD showSuccessWithStatus:NSLocalizedString(@"[Tweet posted]", nil)];
                  [self.tableView reloadData];
              }
              else
-                 [SVProgressHUD showErrorWithStatus:NSLocalizedString(@"[Oops! An error has occured!]", nil) duration:SHOW_MESSAGE_DEFAULT_TIME];
+                 [SVProgressHUD showErrorWithStatus:NSLocalizedString(@"[Oops! An error has occured!]", nil)];
              
          }];
     } else

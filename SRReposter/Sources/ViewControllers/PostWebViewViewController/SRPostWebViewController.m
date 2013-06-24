@@ -11,10 +11,9 @@
 @interface SRPostWebViewController ()
 {
     UIWebView   *_webView;
-    CDFeedItem  *_feedItem;
 }
 
-@property (nonatomic)   UIWebView   *webView;
+@property (nonatomic, strong)   UIWebView   *webView;
 
 -(void)_layoutViews;
 
@@ -22,39 +21,25 @@
 
 @implementation SRPostWebViewController
 
-@synthesize feedItem=_feedItem;
 @synthesize webView=_webView;
-
-
-- (void)dealloc
-{
-    self.webView=nil;
-    self.feedItem=nil;
-}
-
--(void)viewDidLoad
-{
-    [super viewDidLoad];
-}
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    self.webView=nil;
-}
-
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self _layoutViews];
     NSURL *url = [NSURL URLWithString:self.feedItem.link];
     [self.webView loadRequest:[NSURLRequest requestWithURL:url]];
 }
 
+
+-(void)viewWillLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
+    [self _layoutViews];
+}
+
 - (void)viewWillDisappear:(BOOL)animated
 {
-    [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"about:blank"]]];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"about:blank"]]];
 }
 
 - (void)didReceiveMemoryWarning

@@ -10,3 +10,9 @@
 [submodule "Submodules/MWFeedParser"]
 	path = Submodules/MWFeedParser
 	url = https://github.com/mwaterfall/MWFeedParser.git
+[submodule "Submodules/ShareKit"]
+	path = Submodules/ShareKit
+	url = https://github.com/ShareKit/ShareKit.git
+[submodule "Submodules/JTModel"]
+	path = Submodules/JTModel
+	url = https://github.com/mikk22/JTModel.git

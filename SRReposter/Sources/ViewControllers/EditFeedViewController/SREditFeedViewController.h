@@ -8,12 +8,7 @@
 #import "CDFeed.h"
 #import "SREditProtocol.h"
 
-@interface SRFeedEditController : UITableViewController <UITextFieldDelegate>
-{
-    __weak  id<SREditDelegate>      _delegate;
-    CDFeed                          *_feedItem;
-    
-}
+@interface SREditFeedViewController : UITableViewController <UITextFieldDelegate>
 
 @property (nonatomic, strong)   CDFeed                  *feedItem;
 @property (nonatomic, weak)     id<SREditDelegate>      delegate;

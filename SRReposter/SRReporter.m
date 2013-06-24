@@ -6,8 +6,9 @@
 //
 
 #import "SRReporter.h"
-#import "SRFeedsListController.h"
-#import <FacebookSDK/FacebookSDK.h>
+#import "SRFeedsListViewController.h"
+#import "RPLSHKFacebook.h"
+#import "RPLSHKConfigurator.h"
 
 @implementation SRReporter
 
@@ -21,12 +22,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    DefaultSHKConfigurator *configurator = [[RPLSHKConfigurator alloc] init];
+    [SHKConfiguration sharedInstanceWithConfigurator:configurator];
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     [MagicalRecord setupCoreDataStackWithStoreNamed:@"Database.sqlite"];
     
-    SRFeedsListController *feedsController=[[SRFeedsListController alloc] initWithStyle:UITableViewStylePlain];
-    self.navigationController=[[UINavigationController alloc] initWithRootViewController:feedsController];
+    SRFeedsListViewController *feedListViewController=[[SRFeedsListViewController alloc] initWithStyle:UITableViewStylePlain];
+    self.navigationController=[[UINavigationController alloc] initWithRootViewController:feedListViewController];
     
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
@@ -53,17 +57,13 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-
-//
-    if (FBSession.activeSession.state == FBSessionStateCreatedOpening) {    
-        [FBSession.activeSession close]; // so we close our session and start over  
-    }
-
+    [RPLSHKFacebook applicationDidBecomeActive];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    [RPLSHKFacebook applicationWillTerminate];
     [MagicalRecord cleanUp];
 }
 
@@ -73,7 +73,7 @@
   sourceApplication:(NSString *)sourceApplication 
          annotation:(id)annotation 
 {
-    return [FBSession.activeSession handleOpenURL:url]; 
+    return [RPLSHKFacebook handleOpenURL:url];
 }
 
 @end

@@ -14,13 +14,6 @@
 
 @implementation SRFeedFiltersModel
 
-@synthesize feed=_feed;
-
--(void)dealloc
-{
-    self.feed=nil;
-}
-
 -(id)initWithFeed:(CDFeed*)feed
 {
     self=[super init];
@@ -55,7 +48,7 @@
 {
     CDFeedFilter *feedFilter=(CDFeedFilter*)object;//[CDFeedFilter MR_createEntity];
     feedFilter.feed=self.feed;
-    [[feedFilter managedObjectContext] MR_save];
+    [[feedFilter managedObjectContext] MR_saveToPersistentStoreAndWait];
     [super addObject:feedFilter];
 }
 
@@ -63,7 +56,7 @@
 
 -(void)updateObject:(id)anObject
 {
-    [[NSManagedObjectContext MR_contextForCurrentThread] MR_save];
+    [[NSManagedObjectContext MR_contextForCurrentThread] MR_saveToPersistentStoreAndWait];
     [super updateObject:anObject];
 }
 
@@ -72,7 +65,7 @@
     if (index<self.dataObjects.count)
     {
         [[_dataObjects objectAtIndex:index] MR_deleteEntity];
-        [[NSManagedObjectContext MR_defaultContext] MR_save];
+        [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
         [super removeObjectAtIndex:index];
     }
 }
@@ -82,7 +75,7 @@
     if ([anObject isKindOfClass:[NSManagedObject class]])
     {
         [((NSManagedObject*)anObject) MR_deleteEntity];
-        [[NSManagedObjectContext MR_defaultContext] MR_save];
+        [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
         [super removeObject:anObject];
     }
 }
@@ -100,7 +93,7 @@
     feedFilter.repostTW=[NSNumber numberWithBool:newFeedFilter.repostTW];
     feedFilter.keyword=[newFeedFilter.keywords componentsJoinedByString:@"::"];
     
-    [[NSManagedObjectContext MR_defaultContext] MR_save];
+    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
     [super replaceObject:anObject withObject:feedFilter];
 }
 

@@ -5,18 +5,12 @@
 //  Created by Mihail Koltsov on 8/21/12.
 //
 
-#import "SRFeedEditController.h"
+#import "SREditFeedViewController.h"
 #import "SRFeedParamCell.h"
 
-@interface SRFeedEditController ()
-{
-    SREditMode      _editMode;
-    UITextField     *_feedNameTextField;
-    UITextField     *_feedURLTextField;
-}
+@interface SREditFeedViewController ()
 
 @property (nonatomic)           SREditMode      editMode;
-
 @property (nonatomic)           UITextField     *feedNameTextField;
 @property (nonatomic)           UITextField     *feedURLTextField;
 
@@ -27,22 +21,7 @@
 
 @end
 
-@implementation SRFeedEditController
-
-@synthesize editMode=_editMode;
-@synthesize delegate=_delegate;
-@synthesize feedItem=_feedItem;
-@synthesize feedNameTextField=_feedNameTextField;
-@synthesize feedURLTextField=_feedURLTextField;
-
-
--(void)dealloc
-{
-    self.feedNameTextField=nil;
-    self.feedURLTextField=nil;
-    self.feedItem=nil;
-}
-
+@implementation SREditFeedViewController
 
 - (id)initWithEditMode:(SREditMode)editMode
 {
@@ -58,13 +37,6 @@
 {
     [super viewDidLoad];
     [self _setupNavigationBar];
-}
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
