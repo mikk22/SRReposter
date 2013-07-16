@@ -114,7 +114,7 @@
 		CECD86C615E000650061DDB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECD86C515E000650061DDB3 /* CoreGraphics.framework */; };
 		CECD86CC15E000650061DDB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CECD86CA15E000650061DDB3 /* InfoPlist.strings */; };
 		CECD86CE15E000650061DDB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD86CD15E000650061DDB3 /* main.m */; };
-		CECD86D215E000650061DDB3 /* SRReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD86D115E000650061DDB3 /* SRReporter.m */; };
+		CECD86D215E000650061DDB3 /* SRReposter.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD86D115E000650061DDB3 /* SRReposter.m */; };
 		CECD86E315E000650061DDB3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECD86E215E000650061DDB3 /* SenTestingKit.framework */; };
 		CECD86E415E000650061DDB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECD86C115E000650061DDB3 /* UIKit.framework */; };
 		CECD86E515E000650061DDB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECD86C315E000650061DDB3 /* Foundation.framework */; };
@@ -639,8 +639,8 @@
 		CECD86CB15E000650061DDB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CECD86CD15E000650061DDB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CECD86CF15E000650061DDB3 /* SRReposter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SRReposter-Prefix.pch"; sourceTree = "<group>"; };
-		CECD86D015E000650061DDB3 /* SRReporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRReporter.h; sourceTree = "<group>"; };
-		CECD86D115E000650061DDB3 /* SRReporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRReporter.m; sourceTree = "<group>"; };
+		CECD86D015E000650061DDB3 /* SRReposter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRReposter.h; sourceTree = "<group>"; };
+		CECD86D115E000650061DDB3 /* SRReposter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRReposter.m; sourceTree = "<group>"; };
 		CECD86E115E000650061DDB3 /* SRReposterTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SRReposterTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECD86E215E000650061DDB3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		CECD86EA15E000660061DDB3 /* SRReposterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SRReposterTests-Info.plist"; sourceTree = "<group>"; };
@@ -1181,8 +1181,8 @@
 			isa = PBXGroup;
 			children = (
 				CE1E38BC1610E69100098C98 /* Submodules */,
-				CECD86D015E000650061DDB3 /* SRReporter.h */,
-				CECD86D115E000650061DDB3 /* SRReporter.m */,
+				CECD86D015E000650061DDB3 /* SRReposter.h */,
+				CECD86D115E000650061DDB3 /* SRReposter.m */,
 				CECD86FD15E005C40061DDB3 /* Defines */,
 				CECD86F915E002400061DDB3 /* Sources */,
 				CECD870F15E008070061DDB3 /* Resources */,
@@ -1767,7 +1767,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CECD86CE15E000650061DDB3 /* main.m in Sources */,
-				CECD86D215E000650061DDB3 /* SRReporter.m in Sources */,
+				CECD86D215E000650061DDB3 /* SRReposter.m in Sources */,
 				CE67940C15E055DA0052154A /* NSDate+InternetDateTime.m in Sources */,
 				CE67940F15E0563D0052154A /* NSArray+Extras.m in Sources */,
 				CE9B040E15E2CA6E00111B2F /* SRFeed.m in Sources */,

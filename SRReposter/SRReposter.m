@@ -5,12 +5,12 @@
 //  Created by user on 18.08.12.
 //
 
-#import "SRReporter.h"
+#import "SRReposter.h"
 #import "SRFeedsListViewController.h"
 #import "RPLSHKFacebook.h"
 #import "RPLSHKConfigurator.h"
 
-@implementation SRReporter
+@implementation SRReposter
 
 @synthesize window = _window;
 @synthesize navigationController = _navigationController;
@@ -27,7 +27,7 @@
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    [MagicalRecord setupCoreDataStackWithStoreNamed:@"Database.sqlite"];
+    [MagicalRecord setupCoreDataStackWithStoreNamed:DEFAULT_DATABASE_FILENAME];
     
     SRFeedsListViewController *feedListViewController=[[SRFeedsListViewController alloc] initWithStyle:UITableViewStylePlain];
     self.navigationController=[[UINavigationController alloc] initWithRootViewController:feedListViewController];

@@ -14,4 +14,5 @@
     #import "SRReposterDefines.h"
     #import "CoreData+MagicalRecord.h"
     #import "SVProgressHUD.h"
+    #import "SRReposterDefines.h"
 #endif

@@ -33,7 +33,7 @@
 -(NSArray*)_loadDefaultFeedList
 {
     NSString *plistFile = [NSBundle.mainBundle.resourcePath
-                           stringByAppendingPathComponent:@"defaultFeedList.plist"];
+                           stringByAppendingPathComponent:DEFAULT_FEEDLIST_FILENAME];
     
     return [NSArray arrayWithContentsOfFile:plistFile];
 }

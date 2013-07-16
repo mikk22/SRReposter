@@ -7,11 +7,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "SRReporter.h"
+#import "SRReposter.h"
 
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([SRReporter class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([SRReposter class]));
     }
 }

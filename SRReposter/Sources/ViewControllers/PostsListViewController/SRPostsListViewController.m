@@ -51,10 +51,8 @@
     [super viewDidLoad];
     [self _setupNavigationBar];
     
-    self.feedItems=[[SRFeedItemsModel alloc] initWithFeed:self.feed];
-    self.feedItems.delegate=self;
     [self.feedItems load];
-
+    
 	if (_refreshHeaderView == nil) {
 		
 		EGORefreshTableHeaderView *view = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectMake(0.0f, 0.0f - self.tableView.bounds.size.height, self.view.frame.size.width, self.tableView.bounds.size.height)];
@@ -85,6 +83,20 @@
     self.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(_buttonSetupFeedFiltersTouch:)];
 }
 
+
+
+#pragma mark - Properties -
+
+-(SRFeedItemsModel*)feedItems
+{
+    if (!_feedItems)
+    {
+        _feedItems=[[SRFeedItemsModel alloc] initWithFeed:self.feed];
+        _feedItems.delegate=self;
+    }
+    
+    return _feedItems;
+}
 
 
 #pragma mark - Button Touches -
@@ -165,6 +177,12 @@
 
 #pragma mark - JTModel Delegate -
 
+-(void)modelWillLoad:(JTModel *)model
+{
+    [SVProgressHUD showWithStatus:NSLocalizedString(@"[Loading...]", nil)];
+}
+
+
 -(void)modelDidLoad:(JTModel*)model
 {
     if ([model isEqual:self.feedItems])
@@ -176,6 +194,7 @@
 
 -(void)modelChanged:(JTModel *)model withItems:(NSArray *)newItems
 {
+    [SVProgressHUD dismiss];
     [_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.tableView];
     if (newItems.count)
     {

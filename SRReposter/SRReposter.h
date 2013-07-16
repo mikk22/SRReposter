@@ -9,7 +9,7 @@
 
 @class SRViewController;
 
-@interface SRReporter : UIResponder <UIApplicationDelegate>
+@interface SRReposter : UIResponder <UIApplicationDelegate>
 {
     UINavigationController  *_navigationController;
 }

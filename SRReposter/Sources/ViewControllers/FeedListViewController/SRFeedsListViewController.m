@@ -27,10 +27,7 @@
     [super viewDidLoad];
     [self _setupNavigationBar];
     
-    self.dataSource= [[SRFeedModel alloc] init];
-    self.dataSource.delegate=self;
     [self.dataSource load];
-
 }
 
 
@@ -38,6 +35,12 @@
 {
     [super viewWillAppear:animated];
     [self.tableView reloadData];
+}
+
+-(void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    self.dataSource=nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -54,6 +57,19 @@
 }
 
 
+#pragma mark - Properties - 
+
+
+-(SRFeedModel*)dataSource
+{
+    if (!_dataSource)
+    {
+        _dataSource= SRFeedModel.new;
+        _dataSource.delegate=self;
+    }
+    
+    return _dataSource;
+}
 
 #pragma mark - Button Touches -
 
